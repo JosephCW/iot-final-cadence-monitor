@@ -18,4 +18,6 @@ router.get('/', (req, res, next) => {
     res.render('index.ejs', { title: 'Bicycle Cadence Monitor' })
 })
 
+router.use('/cadence', require('../controllers/cadence.js'))
+
 module.exports = router
