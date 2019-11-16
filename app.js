@@ -17,6 +17,10 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
 app.use(expressLayouts)
 app.set('view engine', 'ejs')
 
+// Set initial empty cadence ride object.
+app.locals.cadence = {}
+app.locals.cadence.ride = {}
+
 // Run all routing through routes/index.js
 const routes = require('./routes/index.js')
 app.use('/', routes)
