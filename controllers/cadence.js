@@ -42,4 +42,10 @@
     res.redirect('/cadence/')
 })
 
+// Send a json version of the current cadence object
+api.get('/statistics', (req, res) => {
+    console.log('At /cadence/statistics')
+    res.json(req.app.locals.cadence)
+})
+
  module.exports = api
