@@ -6,7 +6,7 @@ const path = require('path')
 // create instance of express service
 const app = express()
 
-// Set the port and hostname for the service
+// Set the port for the service
 const port = 9001
 
 // Set the views and public folder location.
@@ -17,9 +17,12 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
 app.use(expressLayouts)
 app.set('view engine', 'ejs')
 
-// Set initial empty cadence ride object.
+// Easier handling of post requests
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+// Create base object so it's easier to manage later
 app.locals.cadence = {}
-// app.locals.cadence.ride = {}
 app.locals.cadence.ride = {
     readings: [],
     startTime: 0,

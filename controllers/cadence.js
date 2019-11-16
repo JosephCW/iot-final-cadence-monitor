@@ -48,4 +48,13 @@ api.get('/statistics', (req, res) => {
     res.json(req.app.locals.cadence)
 })
 
+// Handle the post request to add data to the ride, recalc stats
+api.post('/addReading', (req, res) => {
+    console.log('posted to /addReading')
+    const currentTime = req.body.currentTime
+    const strokesSinceLastPublish = req.body.strokesSinceLastPublish
+    req.app.locals.cadence.ride.readings.push({"currentTime": currentTime, "strokesSinceLastPublish": strokesSinceLastPublish})
+    res.end(`Added new reading ct: ${currentTime}, sSLP: ${strokesSinceLastPublish}`)
+})
+
  module.exports = api
