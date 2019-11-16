@@ -1,0 +1,31 @@
+{
+  "name": "iot-final-cadence-monitor",
+  "version": "1.0.0",
+  "description": "bicycle cadence monitor webserver",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephCW/iot-final-cadence-monitor.git"
+  },
+  "keywords": [
+    "bicycle",
+    "cadence",
+    "IoT",
+    "particle",
+    "photon"
+  ],
+  "author": "Joseph Watts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JosephCW/iot-final-cadence-monitor/issues"
+  },
+  "homepage": "https://github.com/JosephCW/iot-final-cadence-monitor#readme",
+  "dependencies": {
+    "ejs": "^2.7.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  }
+}
