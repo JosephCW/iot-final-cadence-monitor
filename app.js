@@ -19,7 +19,16 @@ app.set('view engine', 'ejs')
 
 // Set initial empty cadence ride object.
 app.locals.cadence = {}
-app.locals.cadence.ride = {}
+// app.locals.cadence.ride = {}
+app.locals.cadence.ride = {
+    readings: [],
+    startTime: 0,
+    stopTime: 0,
+    duration: 0,
+    mean: 0,
+    median: 0,
+    currentCadence: 0
+}
 
 // Run all routing through routes/index.js
 const routes = require('./routes/index.js')

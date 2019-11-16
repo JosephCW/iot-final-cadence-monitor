@@ -25,8 +25,8 @@
      console.log('At /cadence/startRide')
      const currentDate = new Date()
      const secondsSinceEpoch = Math.round(currentDate.getTime() / 1000)
-     req.app.locals.cadence.ride['startTime'] = secondsSinceEpoch
-     console.log(`Start Time: ${req.app.locals.cadence.ride['startTime']}`)
+     req.app.locals.cadence.ride.startTime = secondsSinceEpoch
+     console.log(`Start Time: ${req.app.locals.cadence.ride.startTime}`)
      res.redirect('/cadence/')
  })
 
@@ -35,9 +35,9 @@
     console.log('At /cadence/startRide')
     const currentDate = new Date()
     const secondsSinceEpoch = Math.round(currentDate.getTime() / 1000)
-    req.app.locals.cadence.ride['stopTime'] = secondsSinceEpoch
-    req.app.locals.cadence.ride['duration'] = parseInt(req.app.locals.cadence.ride['stopTime']) - parseInt(req.app.locals.cadence.ride['startTime'])
-    console.log(`Stop Time: ${req.app.locals.cadence.ride['stopTime']}`)
+    req.app.locals.cadence.ride.stopTime = secondsSinceEpoch
+    req.app.locals.cadence.ride.duration = parseInt(req.app.locals.cadence.ride.stopTime) - parseInt(req.app.locals.cadence.ride.startTime)
+    console.log(`Stop Time: ${req.app.locals.cadence.ride.stopTime}`)
     console.log(`Ride Duration: ${req.app.locals.cadence.ride.duration}`)
     res.redirect('/cadence/')
 })
