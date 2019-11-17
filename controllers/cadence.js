@@ -48,13 +48,36 @@ api.get('/statistics', (req, res) => {
     res.json(req.app.locals.cadence)
 })
 
+// Helper function for once data has been added.
+function updateStatistics(app) {
+    //const numReadings = app.locals.cadence.ride.readings.length
+    // Add up all of the pedal strokes for the ride
+    let sumOfStrokes = parseInt(0)
+    app.locals.cadence.ride.readings.forEach((reading) => {
+        sumOfStrokes += parseInt(reading.strokesSinceLastPublish)
+    })
+    //console.log(`Sum of strokes: ${sumOfStrokes}`)
+    // Get the start time
+    const startTime = app.locals.cadence.ride.startTime
+    // If the ride is already over then use the stop time
+    // if the ride is still going, then use the current time as the stop time
+    const currentDate = new Date()
+    const stopTime = app.locals.cadence.ride.stopTime != 0 ? 
+                        app.locals.cadence.ride.stopTime :
+                        Math.round(currentDate.getTime() / 1000)
+    
+    // Calculate mean using above variables
+    app.locals.cadence.ride.mean = (sumOfStrokes / (stopTime - startTime)) * 60
+}
+
 // Handle the post request to add data to the ride, recalc stats
 api.post('/addReading', (req, res) => {
     console.log('posted to /addReading')
-    const currentTime = req.body.currentTime
-    const strokesSinceLastPublish = req.body.strokesSinceLastPublish
+    const currentTime = parseInt(req.body.currentTime)
+    const strokesSinceLastPublish = parseInt(req.body.strokesSinceLastPublish)
     req.app.locals.cadence.ride.readings.push({"currentTime": currentTime, "strokesSinceLastPublish": strokesSinceLastPublish})
-    res.end(`Added new reading ct: ${currentTime}, sSLP: ${strokesSinceLastPublish}`)
+    updateStatistics(req.app)
+    res.end(`Added new reading ct: ${currentTime}, sSLP: ${strokesSinceLastPublish}, mean: ${req.app.locals.cadence.ride.mean}`)
 })
 
  module.exports = api
