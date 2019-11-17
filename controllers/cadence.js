@@ -50,9 +50,8 @@ api.get('/statistics', (req, res) => {
 
 // Helper function for once data has been added.
 function updateStatistics(app) {
-    //const numReadings = app.locals.cadence.ride.readings.length
     // Add up all of the pedal strokes for the ride
-    let sumOfStrokes = parseInt(0)
+    let sumOfStrokes = 0
     app.locals.cadence.ride.readings.forEach((reading) => {
         sumOfStrokes += parseInt(reading.strokesSinceLastPublish)
     })
@@ -62,12 +61,42 @@ function updateStatistics(app) {
     // If the ride is already over then use the stop time
     // if the ride is still going, then use the current time as the stop time
     const currentDate = new Date()
+    const currentTimeInSeconds = Math.round(currentDate.getTime() / 1000)
     const stopTime = app.locals.cadence.ride.stopTime != 0 ? 
                         app.locals.cadence.ride.stopTime :
-                        Math.round(currentDate.getTime() / 1000)
+                        currentTimeInSeconds
     
     // Calculate mean using above variables
     app.locals.cadence.ride.mean = (sumOfStrokes / (stopTime - startTime)) * 60
+
+
+    // Calculate current cadence
+    const numReadings = app.locals.cadence.ride.readings.length
+    // If there is more than one reading
+    // Time between the starting and ending reading is > 5 seconds
+    // Find the minimum span to add up to 5 seconds
+    // extrapolate time / sum of strokes
+    console.log(`numReadings: ${numReadings}`)
+    if (numReadings > 1) {
+        // find how many elements it takes to get a reading duration >= 5 seconds
+        let sumOfReadingTime = 0
+        sumOfStrokes = 0
+        let i = numReadings - 1
+        while (i > 0) {
+            // add on the timing difference between the previous two readings.
+            const rideDifference = app.locals.cadence.ride.readings[i].currentTime - app.locals.cadence.ride.readings[i-1].currentTime
+            console.log(`rideDifference: ${rideDifference}`)
+            sumOfReadingTime += rideDifference
+            sumOfStrokes += app.locals.cadence.ride.readings[i].strokesSinceLastPublish
+            console.log(`sumOfReadingTime: ${sumOfReadingTime}`)
+            console.log(`sumOfStrokes: ${sumOfStrokes}`)
+            if (sumOfReadingTime >= 5) {
+                break;
+            }
+            i -= 1
+        }
+        app.locals.cadence.ride.currentCadence = (sumOfStrokes / sumOfReadingTime) * 60
+    }
 }
 
 // Handle the post request to add data to the ride, recalc stats
