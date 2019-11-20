@@ -1,3 +1,9 @@
+/******************************************************/
+//       THIS IS A GENERATED FILE - DO NOT EDIT       //
+/******************************************************/
+
+#include "application.h"
+#line 1 "c:/Users/s526635/Documents/School_Work/IoT/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
 /*
  * Project cadence_monitor
  * Description: IOT Final Project Cadence Monitor
@@ -5,6 +11,10 @@
  * Date: 11/17/2019
  */
 
+void setup();
+void loop();
+void setLedBasedOnCadence(int currentCadence);
+#line 8 "c:/Users/s526635/Documents/School_Work/IoT/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
 int monitor = D0;
 int startButton = A0;
 int stopButton = A1;
