@@ -104,14 +104,6 @@ void setLedBasedOnCadence(int currentCadence) {
   }
 }
 
-// void start(){
-
-// }
-
-// void stop(){
-
-// }
-
 // int getCadence(String event, String data){
 //   Serial.printf("%s\n", data.c_str());
 //   return 0;

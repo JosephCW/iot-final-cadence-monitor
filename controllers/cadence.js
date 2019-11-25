@@ -25,9 +25,22 @@
      console.log('At /cadence/startRide')
      const currentDate = new Date()
      const secondsSinceEpoch = Math.round(currentDate.getTime() / 1000)
-     req.app.locals.cadence.ride.startTime = secondsSinceEpoch
-     console.log(`Start Time: ${req.app.locals.cadence.ride.startTime}`)
-     res.redirect('/cadence/')
+
+     const newRideId = req.app.locals.cadence.ride.length
+     const ride = {
+        id: newRideId,
+        readings: [],
+        startTime: secondsSinceEpoch,
+        stopTime: 0,
+        duration: 0,
+        mean: 0,
+        median: 0,
+        currentCadence: 0
+    }
+    req.app.locals.cadence.ride.push(ride)
+    console.log(`Start Time: ${req.app.locals.cadence.ride[newRideId].startTime}`)
+    res.json(req.app.locals.cadence.ride[newRideId])
+    //res.redirect('/cadence/')
  })
 
  // Note the stop time and assign it to the app's ride['endTime'] property

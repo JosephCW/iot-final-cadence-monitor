@@ -24,15 +24,7 @@ app.use(express.urlencoded({ extended: true }))
 
 // Create base object so it's easier to manage later
 app.locals.cadence = {}
-app.locals.cadence.ride = {
-    readings: [],
-    startTime: 0,
-    stopTime: 0,
-    duration: 0,
-    mean: 0,
-    median: 0,
-    currentCadence: 0
-}
+app.locals.cadence.ride = []
 
 // Run all routing through routes/index.js
 const routes = require('./routes/index.js')
