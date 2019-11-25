@@ -7,7 +7,8 @@ const path = require('path')
 const app = express()
 
 // Set the port for the service
-const port = 9001
+// process.env.PORT is needed for binding on Heroku
+const port = process.env.PORT || 9001
 
 // Set the views and public folder location.
 app.set('views', path.join(__dirname, 'views'))
