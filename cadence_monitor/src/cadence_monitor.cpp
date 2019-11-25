@@ -3,7 +3,7 @@
 /******************************************************/
 
 #include "application.h"
-#line 1 "c:/Users/s526635/Documents/School_Work/IoT/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
+#line 1 "c:/Users/josep/Documents/IoT/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
 /*
  * Project cadence_monitor
  * Description: IOT Final Project Cadence Monitor
@@ -14,7 +14,7 @@
 void setup();
 void loop();
 void setLedBasedOnCadence(int currentCadence);
-#line 8 "c:/Users/s526635/Documents/School_Work/IoT/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
+#line 8 "c:/Users/josep/Documents/IoT/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
 int monitor = D0;
 int startButton = A0;
 int stopButton = A1;

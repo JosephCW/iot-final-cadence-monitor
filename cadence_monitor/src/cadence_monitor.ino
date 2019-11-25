@@ -81,16 +81,20 @@ void loop() {
   if (digitalRead(stopButton)==LOW && Time.now() > btnLastPressTime + 1) {
     btnLastPressTime = Time.now();
     Serial.println("Stop Button Pressed");
+    turnOffLeds();
     activeReading = false;
   }
 }
 
-void setLedBasedOnCadence(int currentCadence) {
+void turnOffLeds() {
   // Set all LED's to off
   digitalWrite(R_LED, LOW);
   digitalWrite(G_LED, LOW);
   digitalWrite(B_LED, LOW);
+}
 
+void setLedBasedOnCadence(int currentCadence) {
+  turnOffLeds();
   if (currentCadence > TARGET_CADENCE + 4) {
     digitalWrite(R_LED, HIGH);
   } else if (currentCadence < TARGET_CADENCE - 4) {

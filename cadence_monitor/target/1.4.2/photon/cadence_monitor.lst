@@ -1,5 +1,5 @@
 
-c:/Users/s526635/Documents/School_Work/IoT/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon/cadence_monitor.elf:     file format elf32-littlearm
+c:/Users/josep/Documents/IoT/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon/cadence_monitor.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -31,52 +31,31 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  13 .debug_macro  000226fb  00000000  00000000  000ce1bf  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_line   0001de30  00000000  00000000  000f08ba  2**0
+ 14 .debug_line   0001dc58  00000000  00000000  000f08ba  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_str    0009f3ec  00000000  00000000  0010e6ea  2**0
+ 15 .debug_str    0009f3d2  00000000  00000000  0010e512  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_frame  0000a8c8  00000000  00000000  001adad8  2**2
+ 16 .debug_frame  0000a8c8  00000000  00000000  001ad8e4  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
 
 080a001c <module_user_pre_init>:
-/**
- * Initializes this user module. Returns the start of the heap.
- */
-void* module_user_pre_init() {
-
-    if ( (&link_global_data_start!=&link_global_data_initial_values) && (link_global_data_size != 0))
  80a001c:	4809      	ldr	r0, [pc, #36]	; (80a0044 <link_dynalib_end+0x28>)
  80a001e:	490a      	ldr	r1, [pc, #40]	; (80a0048 <link_dynalib_end+0x2c>)
-extern constructor_ptr_t link_constructors_end;
-
-/**
- * Initializes this user module. Returns the start of the heap.
- */
-void* module_user_pre_init() {
  80a0020:	b508      	push	{r3, lr}
-
-    if ( (&link_global_data_start!=&link_global_data_initial_values) && (link_global_data_size != 0))
  80a0022:	4288      	cmp	r0, r1
  80a0024:	d005      	beq.n	80a0032 <module_user_pre_init+0x16>
  80a0026:	4a09      	ldr	r2, [pc, #36]	; (80a004c <link_dynalib_end+0x30>)
  80a0028:	4282      	cmp	r2, r0
  80a002a:	d002      	beq.n	80a0032 <module_user_pre_init+0x16>
-    {
-        memcpy(&link_global_data_start, &link_global_data_initial_values, link_global_data_size);
  80a002c:	1a12      	subs	r2, r2, r0
  80a002e:	f001 f9c5 	bl	80a13bc <memcpy>
-    }
-
-    memset(&link_bss_location, 0, link_bss_size );
  80a0032:	4807      	ldr	r0, [pc, #28]	; (80a0050 <link_dynalib_end+0x34>)
  80a0034:	4a07      	ldr	r2, [pc, #28]	; (80a0054 <link_dynalib_end+0x38>)
  80a0036:	2100      	movs	r1, #0
  80a0038:	1a12      	subs	r2, r2, r0
  80a003a:	f001 f9ca 	bl	80a13d2 <memset>
-    return &link_heap_start;
-}
  80a003e:	4806      	ldr	r0, [pc, #24]	; (80a0058 <link_dynalib_end+0x3c>)
  80a0040:	bd08      	pop	{r3, pc}
  80a0042:	bf00      	nop
@@ -88,92 +67,44 @@ void* module_user_pre_init() {
  80a0058:	2000065c 	.word	0x2000065c
 
 080a005c <module_user_init>:
-extern constructor_ptr_t link_constructors_location[];
-extern constructor_ptr_t link_constructors_end;
-#define link_constructors_size   ((unsigned long)&link_constructors_end  -  (unsigned long)&link_constructors_location )
-
-void module_user_init()
-{
  80a005c:	b570      	push	{r4, r5, r6, lr}
-    module_user_init_hook();
  80a005e:	f000 fcad 	bl	80a09bc <module_user_init_hook>
  80a0062:	4b07      	ldr	r3, [pc, #28]	; (80a0080 <module_user_init+0x24>)
  80a0064:	4c07      	ldr	r4, [pc, #28]	; (80a0084 <module_user_init+0x28>)
  80a0066:	461e      	mov	r6, r3
  80a0068:	1ae4      	subs	r4, r4, r3
  80a006a:	08a4      	lsrs	r4, r4, #2
-
-    // invoke constructors
-    int ctor_num;
-    for (ctor_num=0; ctor_num < link_constructors_size/sizeof(constructor_ptr_t); ctor_num++ )
  80a006c:	2500      	movs	r5, #0
  80a006e:	42a5      	cmp	r5, r4
  80a0070:	d004      	beq.n	80a007c <module_user_init+0x20>
-    {
-        link_constructors_location[ctor_num]();
  80a0072:	f856 3025 	ldr.w	r3, [r6, r5, lsl #2]
  80a0076:	4798      	blx	r3
-{
-    module_user_init_hook();
-
-    // invoke constructors
-    int ctor_num;
-    for (ctor_num=0; ctor_num < link_constructors_size/sizeof(constructor_ptr_t); ctor_num++ )
  80a0078:	3501      	adds	r5, #1
  80a007a:	e7f8      	b.n	80a006e <module_user_init+0x12>
-    {
-        link_constructors_location[ctor_num]();
-    }
-}
  80a007c:	bd70      	pop	{r4, r5, r6, pc}
  80a007e:	bf00      	nop
  80a0080:	080a1758 	.word	0x080a1758
  80a0084:	080a178c 	.word	0x080a178c
 
 080a0088 <module_user_setup>:
-
-/**
- * Export these functions with a fuller name so they don't clash with the setup/loop wrappers in the system module.
- */
-void module_user_setup() {
-    setup();
  80a0088:	f000 b812 	b.w	80a00b0 <setup>
 
 080a008c <module_user_loop>:
-}
-
-void module_user_loop() {
  80a008c:	b508      	push	{r3, lr}
-    loop();
  80a008e:	f000 f86f 	bl	80a0170 <loop>
-    _post_loop();
-}
  80a0092:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-    setup();
-}
-
-void module_user_loop() {
-    loop();
-    _post_loop();
  80a0096:	f000 bc53 	b.w	80a0940 <_post_loop>
 
 080a009a <_ZdlPv>:
  80a009a:	f000 bad1 	b.w	80a0640 <free>
 
 080a009e <__cxa_guard_acquire>:
-
-/* Provide default implemenation for __cxa_guard_acquire() and
- * __cxa_guard_release(). Note: these must be revisited if a multitasking
- * OS is ported to this platform. */
-__extension__ typedef int __guard __attribute__((mode (__DI__)));
-int __cxa_guard_acquire(__guard *g) {return !*(char *)(g);};
  80a009e:	7800      	ldrb	r0, [r0, #0]
  80a00a0:	fab0 f080 	clz	r0, r0
  80a00a4:	0940      	lsrs	r0, r0, #5
  80a00a6:	4770      	bx	lr
 
 080a00a8 <__cxa_guard_release>:
-void __cxa_guard_release (__guard *g) {*(char *)g = 1;};
  80a00a8:	2301      	movs	r3, #1
  80a00aa:	7003      	strb	r3, [r0, #0]
  80a00ac:	4770      	bx	lr

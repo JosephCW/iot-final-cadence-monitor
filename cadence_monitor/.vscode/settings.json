@@ -5,5 +5,5 @@
     "files.associations": {
         "*.ino": "cpp"
     },
-    "particle.targetDevice": "Proton"
+    "particle.targetDevice": ""
 }
