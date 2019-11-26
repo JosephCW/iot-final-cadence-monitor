@@ -138,6 +138,7 @@ function updateStatistics(app, rideId) {
 api.post('/addReading', (req, res) => {
     console.log('posted to /addReading')
     const rideId = parseInt(req.body.rideId)
+    console.log(`RideID: ${rideId}` )
     const currentTime = parseInt(req.body.currentTime)
     const strokesSinceLastPublish = parseInt(req.body.strokesSinceLastPublish)
     req.app.locals.cadence.ride[rideId].readings.push({"currentTime": currentTime, "strokesSinceLastPublish": strokesSinceLastPublish})
