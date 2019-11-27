@@ -13,7 +13,10 @@
 
 void setup();
 void loop();
+void turnOffLeds();
 void setLedBasedOnCadence(int currentCadence);
+void handleCadence(const char *event, const char *data);
+void handleStartRide(const char *event, const char *data);
 #line 8 "c:/Users/josep/Documents/IoT/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
 int monitor = D0;
 int startButton = A0;
@@ -27,16 +30,24 @@ bool curReadHigh = false;
 bool activeReading = false;
 int btnLastPressTime = 0;
 
-
 int exampleCadence[] = {25, 50, 55, 60, 60, 67, 70, 69, 65, 60, 60};
 int currentExampleCadence = 0;
 
+int currentCadence = 0;
+int rideId = -1;
 int TARGET_CADENCE = 60;
 int B_LED = D1;
 int G_LED = D2;
 int R_LED = D3;
 
 void setup() {
+  // Subscribe to the following things
+  // Callback on when we call the get cadence page
+  Particle.subscribe("hook-response/getCadence", handleCadence, MY_DEVICES);
+  // Callback to get the rideId when starting
+  Particle.subscribe("hook-response/startRide", handleStartRide, MY_DEVICES);
+  // 
+
   pinMode(monitor, INPUT);
   pinMode(startButton, INPUT_PULLUP);
   pinMode(stopButton, INPUT_PULLUP);
@@ -57,11 +68,11 @@ void loop() {
   if(digitalRead(startButton)==LOW && Time.now() > btnLastPressTime + 1) {
     btnLastPressTime = Time.now();
     Serial.println("Start Button Pressed");
-    activeReading = true;
-    startTime = Time.now();
-    lastPublishTime = Time.now();
+    // Publish a cloud request that will allow us to get our rideId from the server
+    Particle.publish("startRide", "", PRIVATE);
   }
 
+  // It is set to reading and the device got a rideId from the server
   if (activeReading) {
     curTime = Time.now();
 
@@ -73,16 +84,14 @@ void loop() {
     }
 
     if (curTime > lastPublishTime + 3){
-      Serial.printf("{\"currentTime\":%d, \"strokesSinceLastPublish\":%d}\n", curTime, passes);
-      //Particle.publish("addReading", String::format("{\"currentTime\":%d, \"strokesSinceLastPublish\":%d}", curTime, passes));
+      Serial.printf("{\"currentTime\":%d, \"strokesSinceLastPublish\":%d, \"rideId\": %d}", curTime, passes, rideId);
+      Particle.publish("addReading", String::format("{\"currentTime\":%d, \"strokesSinceLastPublish\":%d, \"rideId\": %d}", curTime, passes, rideId));
       
-      // Imitating the subscribe to the cloud function call.
-      // REMOVE LATER
-      Serial.printf("CURRENT EXAMPLE CADENCE: %d\n", exampleCadence[currentExampleCadence]);
-      setLedBasedOnCadence(exampleCadence[currentExampleCadence]);
-      currentExampleCadence++;
-      currentExampleCadence %= 11;
-      
+      // setLedBasedOnCadence(exampleCadence[currentExampleCadence]);
+      // currentExampleCadence++;
+      // currentExampleCadence %= 11;
+      setLedBasedOnCadence(currentCadence);
+
       lastPublishTime = Time.now();
       passes = 0;
     }    
@@ -91,16 +100,20 @@ void loop() {
   if (digitalRead(stopButton)==LOW && Time.now() > btnLastPressTime + 1) {
     btnLastPressTime = Time.now();
     Serial.println("Stop Button Pressed");
+    turnOffLeds();
     activeReading = false;
   }
 }
 
-void setLedBasedOnCadence(int currentCadence) {
+void turnOffLeds() {
   // Set all LED's to off
   digitalWrite(R_LED, LOW);
   digitalWrite(G_LED, LOW);
   digitalWrite(B_LED, LOW);
+}
 
+void setLedBasedOnCadence(int currentCadence) {
+  turnOffLeds();
   if (currentCadence > TARGET_CADENCE + 4) {
     digitalWrite(R_LED, HIGH);
   } else if (currentCadence < TARGET_CADENCE - 4) {
@@ -110,13 +123,19 @@ void setLedBasedOnCadence(int currentCadence) {
   }
 }
 
-// void start(){
+void handleCadence(const char *event, const char *data) {
+  currentCadence = String(data).toInt();
+  Serial.println(data);
+  Serial.printf("Parsed Cadence: %d", currentCadence);
+}
 
-// }
-
-// void stop(){
-
-// }
+void handleStartRide(const char *event, const char *data) {
+  rideId = String(data).toInt();
+  Serial.println(data);
+  // Set the device to start reading, and last publisht time to now
+  activeReading = true;
+  lastPublishTime = Time.now();
+}
 
 // int getCadence(String event, String data){
 //   Serial.printf("%s\n", data.c_str());
