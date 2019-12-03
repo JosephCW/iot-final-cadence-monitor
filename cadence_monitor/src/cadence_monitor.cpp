@@ -3,7 +3,7 @@
 /******************************************************/
 
 #include "application.h"
-#line 1 "c:/Users/josep/Documents/IoT/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
+#line 1 "c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
 /*
  * Project cadence_monitor
  * Description: IOT Final Project Cadence Monitor
@@ -17,7 +17,7 @@ void turnOffLeds();
 void setLedBasedOnCadence(int currentCadence);
 void handleCadence(const char *event, const char *data);
 void handleStartRide(const char *event, const char *data);
-#line 8 "c:/Users/josep/Documents/IoT/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
+#line 8 "c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/src/cadence_monitor.ino"
 int monitor = D0;
 int startButton = A0;
 int stopButton = A1;
@@ -46,7 +46,7 @@ void setup() {
   Particle.subscribe("hook-response/getCadence", handleCadence, MY_DEVICES);
   // Callback to get the rideId when starting
   Particle.subscribe("hook-response/startRide", handleStartRide, MY_DEVICES);
-  // 
+  // a
 
   pinMode(monitor, INPUT);
   pinMode(startButton, INPUT_PULLUP);
@@ -90,6 +90,7 @@ void loop() {
       // setLedBasedOnCadence(exampleCadence[currentExampleCadence]);
       // currentExampleCadence++;
       // currentExampleCadence %= 11;
+      Particle.publish("getCadence", PRIVATE);
       setLedBasedOnCadence(currentCadence);
 
       lastPublishTime = Time.now();
@@ -100,6 +101,7 @@ void loop() {
   if (digitalRead(stopButton)==LOW && Time.now() > btnLastPressTime + 1) {
     btnLastPressTime = Time.now();
     Serial.println("Stop Button Pressed");
+    Particle.publish("stopRide");
     turnOffLeds();
     activeReading = false;
   }
@@ -136,8 +138,3 @@ void handleStartRide(const char *event, const char *data) {
   activeReading = true;
   lastPublishTime = Time.now();
 }
-
-// int getCadence(String event, String data){
-//   Serial.printf("%s\n", data.c_str());
-//   return 0;
-// }

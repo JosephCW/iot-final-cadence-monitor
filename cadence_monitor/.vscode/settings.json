@@ -5,5 +5,7 @@
     "files.associations": {
         "*.ino": "cpp"
     },
-    "particle.targetDevice": ""
+    "particle.targetDevice": "photon2",
+    "particle.firmwareVersion": "1.4.2",
+    "particle.targetPlatform": "photon"
 }
