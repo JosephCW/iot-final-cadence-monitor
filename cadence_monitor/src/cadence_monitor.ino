@@ -30,9 +30,9 @@ int R_LED = D3;
 void setup() {
   // Subscribe to the following things
   // Callback on when we call the get cadence page
-  Particle.subscribe("hook-response/getCadence", handleCadence, MY_DEVICES);
+  Particle.subscribe("hook-response/getCadence/0", handleCadence, MY_DEVICES);
   // Callback to get the rideId when starting
-  Particle.subscribe("hook-response/startRide", handleStartRide, MY_DEVICES);
+  Particle.subscribe("hook-response/startRide/0", handleStartRide, MY_DEVICES);
   // a
 
   pinMode(monitor, INPUT);
@@ -70,10 +70,10 @@ void loop() {
       passes++;
     }
 
-    if (curTime > lastPublishTime + 3){
+    if (curTime > lastPublishTime + 4){
       Serial.printf("{\"currentTime\":%d, \"strokesSinceLastPublish\":%d, \"rideId\": %d}", curTime, passes, rideId);
       Particle.publish("addReading", String::format("{\"currentTime\":%d, \"strokesSinceLastPublish\":%d, \"rideId\": %d}", curTime, passes, rideId));
-      Particle.publish("getCadence", PRIVATE);
+      Particle.publish("getCadence", String::format("{\"rideId\": %d}", rideId), PRIVATE);
 
       lastPublishTime = Time.now();
       passes = 0;
@@ -85,7 +85,7 @@ void loop() {
     Serial.println("Stop Button Pressed");
     // Tell the nodejs server which ride to stop.
     // Server will use its current time to log the ride end.
-    Particle.publish("stopRide", String(rideId), PRIVATE);
+    Particle.publish("stopRide", String::format("{\"rideId\": %d}", rideId), PRIVATE);
     turnOffLeds();
     activeReading = false;
   }
@@ -100,9 +100,9 @@ void turnOffLeds() {
 
 void setLedBasedOnCadence(int currentCadence) {
   turnOffLeds();
-  if (currentCadence > TARGET_CADENCE + 4) {
+  if (currentCadence > TARGET_CADENCE + 6) {
     digitalWrite(R_LED, HIGH);
-  } else if (currentCadence < TARGET_CADENCE - 4) {
+  } else if (currentCadence < TARGET_CADENCE - 6) {
     digitalWrite(B_LED, HIGH);
   } else {
     digitalWrite(G_LED, HIGH);
@@ -111,14 +111,12 @@ void setLedBasedOnCadence(int currentCadence) {
 
 void handleCadence(const char *event, const char *data) {
   currentCadence = String(data).toInt();
-  setLedBasedOnCadence(currentCadence);
-  Serial.println(data);
   Serial.printf("Parsed Cadence: %d\n", currentCadence);
+  setLedBasedOnCadence(currentCadence);
 }
 
 void handleStartRide(const char *event, const char *data) {
   rideId = String(data).toInt();
-  Serial.println(data);
   Serial.printf("Ride Id: %d\n", rideId);
   // Set the device to start reading, and last publisht time to now
   activeReading = true;

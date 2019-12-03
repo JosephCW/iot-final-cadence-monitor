@@ -30323,7 +30323,7 @@ END GROUP
                 0x080a0018                user_part_module
                 0x080a001c                link_dynalib_end = .
 
-.text           0x080a001c     0x2314
+.text           0x080a001c     0x2364
                 0x080a001c                . = ALIGN (0x4)
                 0x080a001c                link_code_location = .
  *(.text.irq)
@@ -30352,802 +30352,803 @@ END GROUP
                 0x080a00ac                __cxa_guard_release
  *fill*         0x080a00b2        0x2 
  .text._Z15handleStartRidePKcS0_
-                0x080a00b4       0x44 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+                0x080a00b4       0x48 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
                 0x080a00b4                handleStartRide(char const*, char const*)
- .text._Z13handleCadencePKcS0_
-                0x080a00f8       0x40 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
-                0x080a00f8                handleCadence(char const*, char const*)
- .text.setup    0x080a0138       0x9c ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
-                0x080a0138                setup
+ .text.setup    0x080a00fc       0x9c ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+                0x080a00fc                setup
  .text._Z11turnOffLedsv
-                0x080a01d4       0x30 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
-                0x080a01d4                turnOffLeds()
+                0x080a0198       0x30 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+                0x080a0198                turnOffLeds()
  .text._Z20setLedBasedOnCadencei
-                0x080a0204       0x40 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
-                0x080a0204                setLedBasedOnCadence(int)
+                0x080a01c8       0x40 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+                0x080a01c8                setLedBasedOnCadence(int)
+ .text._Z13handleCadencePKcS0_
+                0x080a0208       0x38 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+                0x080a0208                handleCadence(char const*, char const*)
  .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE0EED2Ev
-                0x080a0244       0x2c ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
-                0x080a0244                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::~__shared_count()
-                0x080a0244                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::~__shared_count()
- .text.loop     0x080a0270      0x1b8 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
-                0x080a0270                loop
+                0x080a0240       0x2c ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+                0x080a0240                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::~__shared_count()
+                0x080a0240                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::~__shared_count()
+ .text.loop     0x080a026c      0x1d0 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+                0x080a026c                loop
  .text.startup._GLOBAL__sub_I_monitor
-                0x080a0428       0x18 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+                0x080a043c       0x18 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
  .text.HAL_Pin_Map
-                0x080a0440       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
-                0x080a0440                HAL_Pin_Map
+                0x080a0454       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
+                0x080a0454                HAL_Pin_Map
  .text.HAL_Pin_Mode
-                0x080a0450       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
-                0x080a0450                HAL_Pin_Mode
+                0x080a0464       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
+                0x080a0464                HAL_Pin_Mode
  .text.HAL_Get_Pin_Mode
-                0x080a0460       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
-                0x080a0460                HAL_Get_Pin_Mode
+                0x080a0474       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
+                0x080a0474                HAL_Get_Pin_Mode
  .text.HAL_GPIO_Write
-                0x080a0470       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
-                0x080a0470                HAL_GPIO_Write
+                0x080a0484       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
+                0x080a0484                HAL_GPIO_Write
  .text.HAL_GPIO_Read
-                0x080a0480       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
-                0x080a0480                HAL_GPIO_Read
+                0x080a0494       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
+                0x080a0494                HAL_GPIO_Read
  .text.HAL_SPI_Init
-                0x080a0490       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
-                0x080a0490                HAL_SPI_Init
+                0x080a04a4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
+                0x080a04a4                HAL_SPI_Init
  .text.HAL_SPI_Is_Enabled
-                0x080a04a0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
-                0x080a04a0                HAL_SPI_Is_Enabled
+                0x080a04b4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
+                0x080a04b4                HAL_SPI_Is_Enabled
  .text.HAL_RNG_GetRandomNumber
-                0x080a04b0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
-                0x080a04b0                HAL_RNG_GetRandomNumber
+                0x080a04c4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
+                0x080a04c4                HAL_RNG_GetRandomNumber
  .text.HAL_Timer_Get_Milli_Seconds
-                0x080a04c0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
-                0x080a04c0                HAL_Timer_Get_Milli_Seconds
+                0x080a04d4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
+                0x080a04d4                HAL_Timer_Get_Milli_Seconds
  .text.HAL_RTC_Get_UnixTime
-                0x080a04d0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
-                0x080a04d0                HAL_RTC_Get_UnixTime
+                0x080a04e4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
+                0x080a04e4                HAL_RTC_Get_UnixTime
  .text.HAL_RTC_Time_Is_Valid
-                0x080a04e0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
-                0x080a04e0                HAL_RTC_Time_Is_Valid
+                0x080a04f4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
+                0x080a04f4                HAL_RTC_Time_Is_Valid
  .text.os_mutex_create
-                0x080a04f0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_concurrent.o)
-                0x080a04f0                os_mutex_create
+                0x080a0504       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_concurrent.o)
+                0x080a0504                os_mutex_create
  .text.HAL_USART_Init
-                0x080a0500       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
-                0x080a0500                HAL_USART_Init
+                0x080a0514       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+                0x080a0514                HAL_USART_Init
  .text.HAL_USART_Write_Data
-                0x080a0510       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
-                0x080a0510                HAL_USART_Write_Data
+                0x080a0524       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+                0x080a0524                HAL_USART_Write_Data
  .text.HAL_USART_Available_Data
-                0x080a0520       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
-                0x080a0520                HAL_USART_Available_Data
+                0x080a0534       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+                0x080a0534                HAL_USART_Available_Data
  .text.HAL_USART_Read_Data
-                0x080a0530       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
-                0x080a0530                HAL_USART_Read_Data
+                0x080a0544       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+                0x080a0544                HAL_USART_Read_Data
  .text.HAL_USART_Peek_Data
-                0x080a0540       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
-                0x080a0540                HAL_USART_Peek_Data
+                0x080a0554       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+                0x080a0554                HAL_USART_Peek_Data
  .text.HAL_USART_Flush_Data
-                0x080a0550       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
-                0x080a0550                HAL_USART_Flush_Data
+                0x080a0564       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+                0x080a0564                HAL_USART_Flush_Data
  .text.HAL_USART_Is_Enabled
-                0x080a0560       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
-                0x080a0560                HAL_USART_Is_Enabled
+                0x080a0574       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+                0x080a0574                HAL_USART_Is_Enabled
  .text.HAL_USART_Available_Data_For_Write
-                0x080a0570       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
-                0x080a0570                HAL_USART_Available_Data_For_Write
+                0x080a0584       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+                0x080a0584                HAL_USART_Available_Data_For_Write
  .text.HAL_I2C_Write_Data
-                0x080a0580       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
-                0x080a0580                HAL_I2C_Write_Data
+                0x080a0594       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+                0x080a0594                HAL_I2C_Write_Data
  .text.HAL_I2C_Available_Data
-                0x080a0590       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
-                0x080a0590                HAL_I2C_Available_Data
+                0x080a05a4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+                0x080a05a4                HAL_I2C_Available_Data
  .text.HAL_I2C_Read_Data
-                0x080a05a0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
-                0x080a05a0                HAL_I2C_Read_Data
+                0x080a05b4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+                0x080a05b4                HAL_I2C_Read_Data
  .text.HAL_I2C_Peek_Data
-                0x080a05b0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
-                0x080a05b0                HAL_I2C_Peek_Data
+                0x080a05c4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+                0x080a05c4                HAL_I2C_Peek_Data
  .text.HAL_I2C_Flush_Data
-                0x080a05c0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
-                0x080a05c0                HAL_I2C_Flush_Data
+                0x080a05d4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+                0x080a05d4                HAL_I2C_Flush_Data
  .text.HAL_I2C_Is_Enabled
-                0x080a05d0       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
-                0x080a05d0                HAL_I2C_Is_Enabled
+                0x080a05e4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+                0x080a05e4                HAL_I2C_Is_Enabled
  .text.HAL_I2C_Init
-                0x080a05e0       0x14 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
-                0x080a05e0                HAL_I2C_Init
+                0x080a05f4       0x14 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+                0x080a05f4                HAL_I2C_Init
  .text.HAL_USB_USART_Init
-                0x080a05f4       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
-                0x080a05f4                HAL_USB_USART_Init
+                0x080a0608       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+                0x080a0608                HAL_USB_USART_Init
  .text.HAL_USB_USART_Begin
-                0x080a0604       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
-                0x080a0604                HAL_USB_USART_Begin
+                0x080a0618       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+                0x080a0618                HAL_USB_USART_Begin
  .text.HAL_USB_USART_Available_Data
-                0x080a0614       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
-                0x080a0614                HAL_USB_USART_Available_Data
+                0x080a0628       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+                0x080a0628                HAL_USB_USART_Available_Data
  .text.HAL_USB_USART_Available_Data_For_Write
-                0x080a0624       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
-                0x080a0624                HAL_USB_USART_Available_Data_For_Write
+                0x080a0638       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+                0x080a0638                HAL_USB_USART_Available_Data_For_Write
  .text.HAL_USB_USART_Receive_Data
-                0x080a0634       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
-                0x080a0634                HAL_USB_USART_Receive_Data
+                0x080a0648       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+                0x080a0648                HAL_USB_USART_Receive_Data
  .text.HAL_USB_USART_Send_Data
-                0x080a0644       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
-                0x080a0644                HAL_USB_USART_Send_Data
+                0x080a0658       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+                0x080a0658                HAL_USB_USART_Send_Data
  .text.HAL_USB_USART_Flush_Data
-                0x080a0654       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
-                0x080a0654                HAL_USB_USART_Flush_Data
+                0x080a0668       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+                0x080a0668                HAL_USB_USART_Flush_Data
  .text.inet_gethostbyname
-                0x080a0664       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_wlan.o)
-                0x080a0664                inet_gethostbyname
+                0x080a0678       0x10 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_wlan.o)
+                0x080a0678                inet_gethostbyname
  .text.system_mode
-                0x080a0674       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
-                0x080a0674                system_mode
+                0x080a0688       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
+                0x080a0688                system_mode
  .text.set_system_mode
-                0x080a0684       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
-                0x080a0684                set_system_mode
+                0x080a0698       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
+                0x080a0698                set_system_mode
  .text.application_thread_current
-                0x080a0694       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
-                0x080a0694                application_thread_current
+                0x080a06a8       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
+                0x080a06a8                application_thread_current
  .text.application_thread_invoke
-                0x080a06a4       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
-                0x080a06a4                application_thread_invoke
+                0x080a06b8       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
+                0x080a06b8                application_thread_invoke
  .text.system_thread_get_state
-                0x080a06b4       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
-                0x080a06b4                system_thread_get_state
+                0x080a06c8       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
+                0x080a06c8                system_thread_get_state
  .text.system_ctrl_set_app_request_handler
-                0x080a06c4       0x14 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
-                0x080a06c4                system_ctrl_set_app_request_handler
- .text.system_ctrl_set_result
                 0x080a06d8       0x14 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
-                0x080a06d8                system_ctrl_set_result
+                0x080a06d8                system_ctrl_set_app_request_handler
+ .text.system_ctrl_set_result
+                0x080a06ec       0x14 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
+                0x080a06ec                system_ctrl_set_result
  .text.network_connect
-                0x080a06ec       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a06ec                network_connect
+                0x080a0700       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0700                network_connect
  .text.network_connecting
-                0x080a06fc       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a06fc                network_connecting
+                0x080a0710       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0710                network_connecting
  .text.network_disconnect
-                0x080a070c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a070c                network_disconnect
+                0x080a0720       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0720                network_disconnect
  .text.network_ready
-                0x080a071c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a071c                network_ready
+                0x080a0730       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0730                network_ready
  .text.network_on
-                0x080a072c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a072c                network_on
+                0x080a0740       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0740                network_on
  .text.network_off
-                0x080a073c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a073c                network_off
+                0x080a0750       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0750                network_off
  .text.network_listen
-                0x080a074c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a074c                network_listen
+                0x080a0760       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0760                network_listen
  .text.network_listening
-                0x080a075c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a075c                network_listening
+                0x080a0770       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0770                network_listening
  .text.network_set_listen_timeout
-                0x080a076c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a076c                network_set_listen_timeout
+                0x080a0780       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0780                network_set_listen_timeout
  .text.network_get_listen_timeout
-                0x080a077c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
-                0x080a077c                network_get_listen_timeout
+                0x080a0790       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+                0x080a0790                network_get_listen_timeout
  .text.spark_process
-                0x080a078c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
-                0x080a078c                spark_process
+                0x080a07a0       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
+                0x080a07a0                spark_process
  .text.spark_cloud_flag_connected
-                0x080a079c       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
-                0x080a079c                spark_cloud_flag_connected
+                0x080a07b0       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
+                0x080a07b0                spark_cloud_flag_connected
  .text.spark_send_event
-                0x080a07ac       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
-                0x080a07ac                spark_send_event
+                0x080a07c0       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
+                0x080a07c0                spark_send_event
  .text.spark_subscribe
-                0x080a07bc       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
-                0x080a07bc                spark_subscribe
+                0x080a07d0       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
+                0x080a07d0                spark_subscribe
  .text.spark_sync_time_pending
-                0x080a07cc       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
-                0x080a07cc                spark_sync_time_pending
+                0x080a07e0       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
+                0x080a07e0                spark_sync_time_pending
  .text.spark_set_random_seed_from_cloud_handler
-                0x080a07dc       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
-                0x080a07dc                spark_set_random_seed_from_cloud_handler
- .text.malloc   0x080a07ec       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
-                0x080a07ec                malloc
- .text.free     0x080a07fc       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
-                0x080a07fc                free
- .text.realloc  0x080a080c       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
-                0x080a080c                realloc
+                0x080a07f0       0x10 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
+                0x080a07f0                spark_set_random_seed_from_cloud_handler
+ .text.malloc   0x080a0800       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
+                0x080a0800                malloc
+ .text.free     0x080a0810       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
+                0x080a0810                free
+ .text.realloc  0x080a0820       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
+                0x080a0820                realloc
  .text.vsnprintf
-                0x080a081c       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
-                0x080a081c                vsnprintf
- .text.abort    0x080a082c       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
-                0x080a082c                abort
+                0x080a0830       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
+                0x080a0830                vsnprintf
+ .text.abort    0x080a0840       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
+                0x080a0840                abort
  .text._malloc_r
-                0x080a083c       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
-                0x080a083c                _malloc_r
+                0x080a0850       0x10 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
+                0x080a0850                _malloc_r
  .text._ZN8SPIClassD2Ev
-                0x080a084c        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
-                0x080a084c                SPIClass::~SPIClass()
-                0x080a084c                SPIClass::~SPIClass()
+                0x080a0860        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
+                0x080a0860                SPIClass::~SPIClass()
+                0x080a0860                SPIClass::~SPIClass()
  .text._ZN8SPIClassD0Ev
-                0x080a084e        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
-                0x080a084e                SPIClass::~SPIClass()
+                0x080a0862        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
+                0x080a0862                SPIClass::~SPIClass()
  .text._ZN8SPIClassC2E17HAL_SPI_Interface
-                0x080a085c       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
-                0x080a085c                SPIClass::SPIClass(HAL_SPI_Interface)
-                0x080a085c                SPIClass::SPIClass(HAL_SPI_Interface)
+                0x080a0870       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
+                0x080a0870                SPIClass::SPIClass(HAL_SPI_Interface)
+                0x080a0870                SPIClass::SPIClass(HAL_SPI_Interface)
  .text._ZN8SPIClass9isEnabledEv
-                0x080a0884        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
-                0x080a0884                SPIClass::isEnabled()
- *fill*         0x080a088a        0x2 
+                0x080a0898        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
+                0x080a0898                SPIClass::isEnabled()
+ *fill*         0x080a089e        0x2 
  .text.startup._GLOBAL__sub_I_System
-                0x080a088c       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
+                0x080a08a0       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
  .text._ZN6StringD2Ev
-                0x080a08a4        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
-                0x080a08a4                String::~String()
-                0x080a08a4                String::~String()
+                0x080a08b8        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                0x080a08b8                String::~String()
+                0x080a08b8                String::~String()
  .text._ZN6String10invalidateEv
-                0x080a08b2       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
-                0x080a08b2                String::invalidate()
+                0x080a08c6       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                0x080a08c6                String::invalidate()
  .text._ZN6String12changeBufferEj
-                0x080a08c8       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
-                0x080a08c8                String::changeBuffer(unsigned int)
+                0x080a08dc       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                0x080a08dc                String::changeBuffer(unsigned int)
  .text._ZN6String7reserveEj
-                0x080a08e0       0x22 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
-                0x080a08e0                String::reserve(unsigned int)
+                0x080a08f4       0x22 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                0x080a08f4                String::reserve(unsigned int)
  .text._ZN6String4copyEPKcj
-                0x080a0902       0x30 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
-                0x080a0902                String::copy(char const*, unsigned int)
+                0x080a0916       0x30 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                0x080a0916                String::copy(char const*, unsigned int)
  .text._ZN6StringC2EPK19__FlashStringHelper
-                0x080a0932       0x26 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
-                0x080a0932                String::String(char const*)
-                0x080a0932                String::String(char const*)
-                0x080a0932                String::String(__FlashStringHelper const*)
-                0x080a0932                String::String(__FlashStringHelper const*)
+                0x080a0946       0x26 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                0x080a0946                String::String(char const*)
+                0x080a0946                String::String(char const*)
+                0x080a0946                String::String(__FlashStringHelper const*)
+                0x080a0946                String::String(__FlashStringHelper const*)
  .text._ZNK6String5toIntEv
-                0x080a0958        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
-                0x080a0958                String::toInt() const
- *fill*         0x080a0962        0x2 
+                0x080a096c        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                0x080a096c                String::toInt() const
+ *fill*         0x080a0976        0x2 
  .text._ZN6String6formatEPKcz
-                0x080a0964       0x50 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
-                0x080a0964                String::format(char const*, ...)
+                0x080a0978       0x50 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                0x080a0978                String::format(char const*, ...)
  .text._ZN5Print5writeEPKhj
-                0x080a09b4       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
-                0x080a09b4                Print::write(unsigned char const*, unsigned int)
+                0x080a09c8       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+                0x080a09c8                Print::write(unsigned char const*, unsigned int)
  .text._ZN5Print5writeEPKc
-                0x080a09e0       0x20 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
-                0x080a09e0                Print::write(char const*)
+                0x080a09f4       0x20 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+                0x080a09f4                Print::write(char const*)
  .text._ZN5Print5printEc
-                0x080a0a00        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
-                0x080a0a00                Print::print(char)
+                0x080a0a14        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+                0x080a0a14                Print::print(char)
  .text._ZN5Print7printlnEv
-                0x080a0a06       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
-                0x080a0a06                Print::println()
+                0x080a0a1a       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+                0x080a0a1a                Print::println()
  .text._ZN5Print7printlnEPKc
-                0x080a0a1e       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
-                0x080a0a1e                Print::println(char const*)
+                0x080a0a32       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+                0x080a0a32                Print::println(char const*)
  .text._ZN5Print11printNumberEmh
-                0x080a0a32       0x3e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
-                0x080a0a32                Print::printNumber(unsigned long, unsigned char)
+                0x080a0a46       0x3e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+                0x080a0a46                Print::printNumber(unsigned long, unsigned char)
  .text._ZN5Print5printEmi
-                0x080a0a70       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
-                0x080a0a70                Print::print(unsigned long, int)
+                0x080a0a84       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+                0x080a0a84                Print::print(unsigned long, int)
  .text._ZN5Print5printEhi
-                0x080a0a86        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
-                0x080a0a86                Print::print(unsigned char, int)
+                0x080a0a9a        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+                0x080a0a9a                Print::print(unsigned char, int)
  .text._ZN5Print11printf_implEbPKcz
-                0x080a0a8a       0x74 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
-                0x080a0a8a                Print::printf_impl(bool, char const*, ...)
+                0x080a0a9e       0x74 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+                0x080a0a9e                Print::printf_impl(bool, char const*, ...)
  .text._ZN5spark9WiFiClass2onEv
-                0x080a0afe        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
-                0x080a0afe                spark::WiFiClass::on()
+                0x080a0b12        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
+                0x080a0b12                spark::WiFiClass::on()
  .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE0EEC2ERKS2_
-                0x080a0b0a        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
-                0x080a0b0a                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)0> const&)
-                0x080a0b0a                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)0> const&)
+                0x080a0b1e        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
+                0x080a0b1e                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)0> const&)
+                0x080a0b1e                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)0> const&)
  .text.startup._GLOBAL__sub_I__ZN5spark3LogE
-                0x080a0b18       0x10 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
+                0x080a0b2c       0x10 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
  .text._ZN10CloudClass12syncTimeDoneEv.isra.1
-                0x080a0b28       0x1a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+                0x080a0b3c       0x1a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
  .text._ZN9TimeClass7isValidEv
-                0x080a0b42       0x42 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
-                0x080a0b42                TimeClass::isValid()
+                0x080a0b56       0x42 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+                0x080a0b56                TimeClass::isValid()
  .text._ZN9TimeClass3nowEv
-                0x080a0b84        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
-                0x080a0b84                TimeClass::now()
- *fill*         0x080a0b92        0x2 
+                0x080a0b98        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+                0x080a0b98                TimeClass::now()
+ *fill*         0x080a0ba6        0x2 
  .text.startup._GLOBAL__sub_I_TIME_FORMAT_DEFAULT
-                0x080a0b94       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+                0x080a0ba8       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
  .text._ZNSt14_Function_baseD2Ev
-                0x080a0ba8       0x12 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
-                0x080a0ba8                std::_Function_base::~_Function_base()
-                0x080a0ba8                std::_Function_base::~_Function_base()
+                0x080a0bbc       0x12 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
+                0x080a0bbc                std::_Function_base::~_Function_base()
+                0x080a0bbc                std::_Function_base::~_Function_base()
  .text._ZN8RGBClassD2Ev
-                0x080a0bba        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
-                0x080a0bba                RGBClass::~RGBClass()
-                0x080a0bba                RGBClass::~RGBClass()
+                0x080a0bce        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
+                0x080a0bce                RGBClass::~RGBClass()
+                0x080a0bce                RGBClass::~RGBClass()
  .text._ZSt4swapISt9_Any_dataEvRT_S2_
-                0x080a0bc6       0x20 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
-                0x080a0bc6                void std::swap<std::_Any_data>(std::_Any_data&, std::_Any_data&)
- *fill*         0x080a0be6        0x2 
+                0x080a0bda       0x20 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
+                0x080a0bda                void std::swap<std::_Any_data>(std::_Any_data&, std::_Any_data&)
+ *fill*         0x080a0bfa        0x2 
  .text.startup._GLOBAL__sub_I_RGB
-                0x080a0be8       0x1c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
+                0x080a0bfc       0x1c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
  .text.serialEventRun
-                0x080a0c04       0x64 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
-                0x080a0c04                serialEventRun
+                0x080a0c18       0x64 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+                0x080a0c18                serialEventRun
  .text._post_loop
-                0x080a0c68       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
-                0x080a0c68                _post_loop
+                0x080a0c7c       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+                0x080a0c7c                _post_loop
  .text._Z33system_initialize_user_backup_ramv
-                0x080a0c7c       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
-                0x080a0c7c                system_initialize_user_backup_ram()
+                0x080a0c90       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+                0x080a0c90                system_initialize_user_backup_ram()
  .text._Z27ctrl_request_custom_handlerP12ctrl_request
-                0x080a0c94       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
-                0x080a0c94                ctrl_request_custom_handler(ctrl_request*)
- *fill*         0x080a0caa        0x2 
+                0x080a0ca8       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+                0x080a0ca8                ctrl_request_custom_handler(ctrl_request*)
+ *fill*         0x080a0cbe        0x2 
  .text._ZL20ctrl_request_handlerP12ctrl_request
-                0x080a0cac       0x38 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+                0x080a0cc0       0x38 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
  .text.module_user_init_hook
-                0x080a0ce4       0x58 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
-                0x080a0ce4                module_user_init_hook
+                0x080a0cf8       0x58 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+                0x080a0cf8                module_user_init_hook
  .text._ZNSt15_Sp_counted_ptrIPN8particle6detail10FutureImplIbNS1_13FutureContextEEELN9__gnu_cxx12_Lock_policyE0EED2Ev
-                0x080a0d3c        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0d3c                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr()
-                0x080a0d3c                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr()
+                0x080a0d50        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0d50                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr()
+                0x080a0d50                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr()
  .text._ZNSt15_Sp_counted_ptrIPN8particle6detail10FutureImplIbNS1_13FutureContextEEELN9__gnu_cxx12_Lock_policyE0EE14_M_get_deleterERKSt9type_info
-                0x080a0d3e        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0d3e                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+                0x080a0d52        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0d52                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
  .text._ZNSt15_Sp_counted_ptrIPN8particle6detail10FutureImplIbNS1_13FutureContextEEELN9__gnu_cxx12_Lock_policyE0EED0Ev
-                0x080a0d42        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0d42                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr()
+                0x080a0d56        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0d56                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr()
  .text._ZNSt15_Sp_counted_ptrIPN8particle6detail10FutureImplIbNS1_13FutureContextEEELN9__gnu_cxx12_Lock_policyE0EE10_M_destroyEv
-                0x080a0d50        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0d50                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+                0x080a0d64        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0d64                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
  .text._ZN8particle5ErrorC2EOS0_
-                0x080a0d5a       0x1e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0d5a                particle::Error::Error(particle::Error&&)
-                0x080a0d5a                particle::Error::Error(particle::Error&&)
+                0x080a0d6e       0x1e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0d6e                particle::Error::Error(particle::Error&&)
+                0x080a0d6e                particle::Error::Error(particle::Error&&)
  .text._ZN8particle5ErrorD2Ev
-                0x080a0d78        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0d78                particle::Error::~Error()
-                0x080a0d78                particle::Error::~Error()
+                0x080a0d8c        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0d8c                particle::Error::~Error()
+                0x080a0d8c                particle::Error::~Error()
  .text._ZNSt15_Sp_counted_ptrIPN8particle6detail10FutureImplIbNS1_13FutureContextEEELN9__gnu_cxx12_Lock_policyE0EE10_M_disposeEv
-                0x080a0d86       0x46 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0d86                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+                0x080a0d9a       0x46 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0d9a                std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
  .text._ZN8particle6FutureIbNS_6detail13FutureContextEEC2ESt10shared_ptrINS1_10FutureImplIbS2_EEE
-                0x080a0dcc       0x22 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0dcc                particle::Future<bool, particle::detail::FutureContext>::Future(std::shared_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext> >)
-                0x080a0dcc                particle::Future<bool, particle::detail::FutureContext>::Future(std::shared_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext> >)
+                0x080a0de0       0x22 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0de0                particle::Future<bool, particle::detail::FutureContext>::Future(std::shared_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext> >)
+                0x080a0de0                particle::Future<bool, particle::detail::FutureContext>::Future(std::shared_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext> >)
  .text._ZN8particle11PromiseBaseIbNS_6detail13FutureContextEE11fromDataPtrEPv
-                0x080a0dee       0x3c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0dee                particle::PromiseBase<bool, particle::detail::FutureContext>::fromDataPtr(void*)
- *fill*         0x080a0e2a        0x2 
+                0x080a0e02       0x3c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0e02                particle::PromiseBase<bool, particle::detail::FutureContext>::fromDataPtr(void*)
+ *fill*         0x080a0e3e        0x2 
  .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE0EEC2IPN8particle6detail10FutureImplIbNS5_13FutureContextEEEEET_
-                0x080a0e2c       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0e2c                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::__shared_count<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*>(particle::detail::FutureImpl<bool, particle::detail::FutureContext>*)
-                0x080a0e2c                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::__shared_count<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*>(particle::detail::FutureImpl<bool, particle::detail::FutureContext>*)
+                0x080a0e40       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0e40                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::__shared_count<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*>(particle::detail::FutureImpl<bool, particle::detail::FutureContext>*)
+                0x080a0e40                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::__shared_count<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*>(particle::detail::FutureImpl<bool, particle::detail::FutureContext>*)
  .text._ZNKSt8functionIFvRKN8particle5ErrorEEEclES3_
-                0x080a0e54       0x12 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0e54                std::function<void (particle::Error const&)>::operator()(particle::Error const&) const
+                0x080a0e68       0x12 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0e68                std::function<void (particle::Error const&)>::operator()(particle::Error const&) const
  .text._ZNSt17_Function_handlerIFvvESt5_BindIFSt8functionIFvRKN8particle5ErrorEEES4_EEE9_M_invokeERKSt9_Any_data
-                0x080a0e66        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0e66                std::_Function_handler<void (), std::_Bind<std::function<void (particle::Error const&)> (particle::Error)> >::_M_invoke(std::_Any_data const&)
+                0x080a0e7a        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0e7a                std::_Function_handler<void (), std::_Bind<std::function<void (particle::Error const&)> (particle::Error)> >::_M_invoke(std::_Any_data const&)
  .text._ZNKSt8functionIFvRKbEEclES1_
-                0x080a0e74       0x12 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0e74                std::function<void (bool const&)>::operator()(bool const&) const
+                0x080a0e88       0x12 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0e88                std::function<void (bool const&)>::operator()(bool const&) const
  .text._ZNSt17_Function_handlerIFvvESt5_BindIFSt8functionIFvRKbEEbEEE9_M_invokeERKSt9_Any_data
-                0x080a0e86        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0e86                std::_Function_handler<void (), std::_Bind<std::function<void (bool const&)> (bool)> >::_M_invoke(std::_Any_data const&)
+                0x080a0e9a        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0e9a                std::_Function_handler<void (), std::_Bind<std::function<void (bool const&)> (bool)> >::_M_invoke(std::_Any_data const&)
  .text._ZNSt8functionIFvRKN8particle5ErrorEEEC2ERKS5_
-                0x080a0e94       0x1e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0e94                std::function<void (particle::Error const&)>::function(std::function<void (particle::Error const&)> const&)
-                0x080a0e94                std::function<void (particle::Error const&)>::function(std::function<void (particle::Error const&)> const&)
- *fill*         0x080a0eb2        0x2 
+                0x080a0ea8       0x1e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0ea8                std::function<void (particle::Error const&)>::function(std::function<void (particle::Error const&)> const&)
+                0x080a0ea8                std::function<void (particle::Error const&)>::function(std::function<void (particle::Error const&)> const&)
+ *fill*         0x080a0ec6        0x2 
  .text._ZN8particle11PromiseBaseIbNS_6detail13FutureContextEE8setErrorENS_5ErrorE
-                0x080a0eb4      0x10c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0eb4                particle::PromiseBase<bool, particle::detail::FutureContext>::setError(particle::Error)
+                0x080a0ec8      0x10c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0ec8                particle::PromiseBase<bool, particle::detail::FutureContext>::setError(particle::Error)
  .text._ZN10CloudClass13publish_eventEPKcS1_iN8particle5FlagsI15PublishFlagTypehEE
-                0x080a0fc0      0x11c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a0fc0                CloudClass::publish_event(char const*, char const*, int, particle::Flags<PublishFlagType, unsigned char>)
+                0x080a0fd4      0x11c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a0fd4                CloudClass::publish_event(char const*, char const*, int, particle::Flags<PublishFlagType, unsigned char>)
  .text._ZNSt14_Function_base13_Base_managerISt5_BindIFSt8functionIFvRKN8particle5ErrorEEES4_EEE10_M_managerERSt9_Any_dataRKSC_St18_Manager_operation
-                0x080a10dc       0x5a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a10dc                std::_Function_base::_Base_manager<std::_Bind<std::function<void (particle::Error const&)> (particle::Error)> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+                0x080a10f0       0x5a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a10f0                std::_Function_base::_Base_manager<std::_Bind<std::function<void (particle::Error const&)> (particle::Error)> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
  .text._ZNSt8functionIFvRKbEEC2ERKS3_
-                0x080a1136       0x1e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a1136                std::function<void (bool const&)>::function(std::function<void (bool const&)> const&)
-                0x080a1136                std::function<void (bool const&)>::function(std::function<void (bool const&)> const&)
+                0x080a114a       0x1e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a114a                std::function<void (bool const&)>::function(std::function<void (bool const&)> const&)
+                0x080a114a                std::function<void (bool const&)>::function(std::function<void (bool const&)> const&)
  .text._ZNSt14_Function_base13_Base_managerISt5_BindIFSt8functionIFvRKbEEbEEE10_M_managerERSt9_Any_dataRKSA_St18_Manager_operation
-                0x080a1154       0x46 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a1154                std::_Function_base::_Base_manager<std::_Bind<std::function<void (bool const&)> (bool)> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
- *fill*         0x080a119a        0x2 
+                0x080a1168       0x46 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a1168                std::_Function_base::_Base_manager<std::_Bind<std::function<void (bool const&)> (bool)> >::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+ *fill*         0x080a11ae        0x2 
  .text._ZN8particle6detail14FutureImplBaseIbNS0_13FutureContextEE14invokeCallbackIFvRKbEJRbEEEvRSt6atomicIPSt8functionIT_EEDpOT0_
-                0x080a119c       0xb0 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a119c                void particle::detail::FutureImplBase<bool, particle::detail::FutureContext>::invokeCallback<void (bool const&), bool&>(std::atomic<std::function<void (bool const&)>*>&, bool&)
-                0x080a119c                void particle::detail::FutureImplBase<bool, particle::detail::FutureContext>::invokeCallback<void (bool const&), bool&>(std::atomic<std::function<void (bool const&)>*>&, bool&)
+                0x080a11b0       0xb0 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a11b0                void particle::detail::FutureImplBase<bool, particle::detail::FutureContext>::invokeCallback<void (bool const&), bool&>(std::atomic<std::function<void (bool const&)>*>&, bool&)
+                0x080a11b0                void particle::detail::FutureImplBase<bool, particle::detail::FutureContext>::invokeCallback<void (bool const&), bool&>(std::atomic<std::function<void (bool const&)>*>&, bool&)
  .text._ZN12_GLOBAL__N_125publishCompletionCallbackEiPKvPvS2_
-                0x080a124c       0x78 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a1260       0x78 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
  .text._ZN9IPAddressD2Ev
-                0x080a12c4        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
-                0x080a12c4                IPAddress::~IPAddress()
-                0x080a12c4                IPAddress::~IPAddress()
+                0x080a12d8        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+                0x080a12d8                IPAddress::~IPAddress()
+                0x080a12d8                IPAddress::~IPAddress()
  .text._ZN9IPAddressD0Ev
-                0x080a12c6        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
-                0x080a12c6                IPAddress::~IPAddress()
+                0x080a12da        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+                0x080a12da                IPAddress::~IPAddress()
  .text._ZNK9IPAddress7printToER5Print
-                0x080a12d4       0x32 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
-                0x080a12d4                IPAddress::printTo(Print&) const
- *fill*         0x080a1306        0x2 
+                0x080a12e8       0x32 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+                0x080a12e8                IPAddress::printTo(Print&) const
+ *fill*         0x080a131a        0x2 
  .text._ZN9IPAddressC2Ev
-                0x080a1308       0x1c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
-                0x080a1308                IPAddress::IPAddress()
-                0x080a1308                IPAddress::IPAddress()
+                0x080a131c       0x1c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+                0x080a131c                IPAddress::IPAddress()
+                0x080a131c                IPAddress::IPAddress()
  .text._ZN9IPAddressC2ERK16_HAL_IPAddress_t
-                0x080a1324       0x24 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
-                0x080a1324                IPAddress::IPAddress(_HAL_IPAddress_t const&)
-                0x080a1324                IPAddress::IPAddress(_HAL_IPAddress_t const&)
+                0x080a1338       0x24 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+                0x080a1338                IPAddress::IPAddress(_HAL_IPAddress_t const&)
+                0x080a1338                IPAddress::IPAddress(_HAL_IPAddress_t const&)
  .text._ZN9IPAddressC2Em
-                0x080a1348       0x10 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
-                0x080a1348                IPAddress::IPAddress(unsigned long)
-                0x080a1348                IPAddress::IPAddress(unsigned long)
+                0x080a135c       0x10 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+                0x080a135c                IPAddress::IPAddress(unsigned long)
+                0x080a135c                IPAddress::IPAddress(unsigned long)
  .text._ZN9IPAddress8set_ipv4Ehhhh
-                0x080a1358       0x1a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
-                0x080a1358                IPAddress::set_ipv4(unsigned char, unsigned char, unsigned char, unsigned char)
- *fill*         0x080a1372        0x2 
+                0x080a136c       0x1a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+                0x080a136c                IPAddress::set_ipv4(unsigned char, unsigned char, unsigned char, unsigned char)
+ *fill*         0x080a1386        0x2 
  .text._ZN9IPAddressC2Ehhhh
-                0x080a1374       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
-                0x080a1374                IPAddress::IPAddress(unsigned char, unsigned char, unsigned char, unsigned char)
-                0x080a1374                IPAddress::IPAddress(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x080a1388       0x18 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+                0x080a1388                IPAddress::IPAddress(unsigned char, unsigned char, unsigned char, unsigned char)
+                0x080a1388                IPAddress::IPAddress(unsigned char, unsigned char, unsigned char, unsigned char)
  .text._ZN9USBSerial14blockOnOverrunEb
-                0x080a138c        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a138c                USBSerial::blockOnOverrun(bool)
+                0x080a13a0        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a13a0                USBSerial::blockOnOverrun(bool)
  .text._ZN9USBSerialD2Ev
-                0x080a1390        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a1390                USBSerial::~USBSerial()
-                0x080a1390                USBSerial::~USBSerial()
+                0x080a13a4        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a13a4                USBSerial::~USBSerial()
+                0x080a13a4                USBSerial::~USBSerial()
  .text._ZN9USBSerial4readEv
-                0x080a1392       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a1392                USBSerial::read()
+                0x080a13a6       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a13a6                USBSerial::read()
  .text._ZN9USBSerial4peekEv
-                0x080a13a8       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a13a8                USBSerial::peek()
+                0x080a13bc       0x16 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a13bc                USBSerial::peek()
  .text._ZN9USBSerial17availableForWriteEv
-                0x080a13be        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a13be                USBSerial::availableForWrite()
+                0x080a13d2        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a13d2                USBSerial::availableForWrite()
  .text._ZN9USBSerial9availableEv
-                0x080a13cc        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a13cc                USBSerial::available()
- .text._ZN9USBSerial5flushEv
-                0x080a13da        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a13da                USBSerial::flush()
- .text._ZN9USBSerialD0Ev
                 0x080a13e0        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a13e0                USBSerial::~USBSerial()
+                0x080a13e0                USBSerial::available()
+ .text._ZN9USBSerial5flushEv
+                0x080a13ee        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a13ee                USBSerial::flush()
+ .text._ZN9USBSerialD0Ev
+                0x080a13f4        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a13f4                USBSerial::~USBSerial()
  .text._ZN9USBSerial5writeEh
-                0x080a13ee       0x22 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a13ee                USBSerial::write(unsigned char)
+                0x080a1402       0x22 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a1402                USBSerial::write(unsigned char)
  .text._ZN9USBSerialC2E20HAL_USB_USART_SerialRK20HAL_USB_USART_Config
-                0x080a1410       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a1410                USBSerial::USBSerial(HAL_USB_USART_Serial, HAL_USB_USART_Config const&)
-                0x080a1410                USBSerial::USBSerial(HAL_USB_USART_Serial, HAL_USB_USART_Config const&)
+                0x080a1424       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a1424                USBSerial::USBSerial(HAL_USB_USART_Serial, HAL_USB_USART_Config const&)
+                0x080a1424                USBSerial::USBSerial(HAL_USB_USART_Serial, HAL_USB_USART_Config const&)
  .text._ZN9USBSerial5beginEl
-                0x080a1438        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a1438                USBSerial::begin(long)
+                0x080a144c        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a144c                USBSerial::begin(long)
  .text._Z19acquireSerialBufferv
-                0x080a1440       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a1440                acquireSerialBuffer()
+                0x080a1454       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a1454                acquireSerialBuffer()
  .text._Z16_fetch_usbserialv
-                0x080a146c       0x4c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a146c                _fetch_usbserial()
+                0x080a1480       0x4c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a1480                _fetch_usbserial()
  .text._Z23acquireUSBSerial1Bufferv
-                0x080a14b8       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a14b8                acquireUSBSerial1Buffer()
+                0x080a14cc       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a14cc                acquireUSBSerial1Buffer()
  .text._Z17_fetch_usbserial1v
-                0x080a14e4       0x4c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a14e4                _fetch_usbserial1()
+                0x080a14f8       0x4c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a14f8                _fetch_usbserial1()
  .text._ZN11USARTSerialD2Ev
-                0x080a1530        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a1530                USARTSerial::~USARTSerial()
-                0x080a1530                USARTSerial::~USARTSerial()
+                0x080a1544        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a1544                USARTSerial::~USARTSerial()
+                0x080a1544                USARTSerial::~USARTSerial()
  .text._ZN11USARTSerial14blockOnOverrunEb
-                0x080a1532        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a1532                USARTSerial::blockOnOverrun(bool)
+                0x080a1546        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a1546                USARTSerial::blockOnOverrun(bool)
  .text._ZN11USARTSerial17availableForWriteEv
-                0x080a1536        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a1536                USARTSerial::availableForWrite()
+                0x080a154a        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a154a                USARTSerial::availableForWrite()
  .text._ZN11USARTSerial9availableEv
-                0x080a1544        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a1544                USARTSerial::available()
+                0x080a1558        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a1558                USARTSerial::available()
  .text._ZN11USARTSerial4peekEv
-                0x080a1552       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a1552                USARTSerial::peek()
- .text._ZN11USARTSerial4readEv
                 0x080a1566       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a1566                USARTSerial::read()
+                0x080a1566                USARTSerial::peek()
+ .text._ZN11USARTSerial4readEv
+                0x080a157a       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a157a                USARTSerial::read()
  .text._ZN11USARTSerial5flushEv
-                0x080a157a        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a157a                USARTSerial::flush()
+                0x080a158e        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a158e                USARTSerial::flush()
  .text._ZN11USARTSerialD0Ev
-                0x080a1580        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a1580                USARTSerial::~USARTSerial()
+                0x080a1594        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a1594                USARTSerial::~USARTSerial()
  .text._ZN11USARTSerial5writeEh
-                0x080a158e       0x24 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a158e                USARTSerial::write(unsigned char)
- *fill*         0x080a15b2        0x2 
+                0x080a15a2       0x24 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a15a2                USARTSerial::write(unsigned char)
+ *fill*         0x080a15c6        0x2 
  .text._ZN11USARTSerialC2E16HAL_USART_SerialP11Ring_BufferS2_
-                0x080a15b4       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a15b4                USARTSerial::USARTSerial(HAL_USART_Serial, Ring_Buffer*, Ring_Buffer*)
-                0x080a15b4                USARTSerial::USARTSerial(HAL_USART_Serial, Ring_Buffer*, Ring_Buffer*)
+                0x080a15c8       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a15c8                USARTSerial::USARTSerial(HAL_USART_Serial, Ring_Buffer*, Ring_Buffer*)
+                0x080a15c8                USARTSerial::USARTSerial(HAL_USART_Serial, Ring_Buffer*, Ring_Buffer*)
  .text._ZN11USARTSerial9isEnabledEv
-                0x080a15e0        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a15e0                USARTSerial::isEnabled()
- *fill*         0x080a15e6        0x2 
+                0x080a15f4        0x6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a15f4                USARTSerial::isEnabled()
+ *fill*         0x080a15fa        0x2 
  .text._Z22__fetch_global_Serial1v
-                0x080a15e8       0x4c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a15e8                __fetch_global_Serial1()
+                0x080a15fc       0x4c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a15fc                __fetch_global_Serial1()
  .text._ZN8particle6detail21futureCallbackWrapperEPv
-                0x080a1634       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
-                0x080a1634                particle::detail::futureCallbackWrapper(void*)
+                0x080a1648       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
+                0x080a1648                particle::detail::futureCallbackWrapper(void*)
  .text._ZN7TwoWireD2Ev
-                0x080a165c        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a165c                TwoWire::~TwoWire()
-                0x080a165c                TwoWire::~TwoWire()
+                0x080a1670        0x2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a1670                TwoWire::~TwoWire()
+                0x080a1670                TwoWire::~TwoWire()
  .text._ZN7TwoWire5writeEPKhj
-                0x080a165e       0x20 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a165e                TwoWire::write(unsigned char const*, unsigned int)
+                0x080a1672       0x20 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a1672                TwoWire::write(unsigned char const*, unsigned int)
  .text._ZN7TwoWire5writeEh
-                0x080a167e        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a167e                TwoWire::write(unsigned char)
+                0x080a1692        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a1692                TwoWire::write(unsigned char)
  .text._ZN7TwoWire9availableEv
-                0x080a1686        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a1686                TwoWire::available()
+                0x080a169a        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a169a                TwoWire::available()
  .text._ZN7TwoWire4readEv
-                0x080a168e        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a168e                TwoWire::read()
+                0x080a16a2        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a16a2                TwoWire::read()
  .text._ZN7TwoWire4peekEv
-                0x080a1696        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a1696                TwoWire::peek()
+                0x080a16aa        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a16aa                TwoWire::peek()
  .text._ZN7TwoWire5flushEv
-                0x080a169e        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a169e                TwoWire::flush()
+                0x080a16b2        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a16b2                TwoWire::flush()
  .text._ZN7TwoWireD0Ev
-                0x080a16a6        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a16a6                TwoWire::~TwoWire()
+                0x080a16ba        0xe ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a16ba                TwoWire::~TwoWire()
  .text._ZN7TwoWireC2E17HAL_I2C_Interface
-                0x080a16b4       0x24 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a16b4                TwoWire::TwoWire(HAL_I2C_Interface)
-                0x080a16b4                TwoWire::TwoWire(HAL_I2C_Interface)
+                0x080a16c8       0x24 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a16c8                TwoWire::TwoWire(HAL_I2C_Interface)
+                0x080a16c8                TwoWire::TwoWire(HAL_I2C_Interface)
  .text._ZN7TwoWire9isEnabledEv
-                0x080a16d8        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a16d8                TwoWire::isEnabled()
+                0x080a16ec        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a16ec                TwoWire::isEnabled()
  .text._ZN5spark9WiFiClass5readyEv
-                0x080a16e0        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a16e0                spark::WiFiClass::ready()
+                0x080a16f4        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a16f4                spark::WiFiClass::ready()
  .text._ZN5spark9WiFiClass7resolveEPKc
-                0x080a16ea       0x44 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a16ea                spark::WiFiClass::resolve(char const*)
+                0x080a16fe       0x44 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a16fe                spark::WiFiClass::resolve(char const*)
  .text._ZN5spark9WiFiClass9listeningEv
-                0x080a172e        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a172e                spark::WiFiClass::listening()
+                0x080a1742        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a1742                spark::WiFiClass::listening()
  .text._ZN5spark9WiFiClass16getListenTimeoutEv
-                0x080a1738        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a1738                spark::WiFiClass::getListenTimeout()
+                0x080a174c        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a174c                spark::WiFiClass::getListenTimeout()
  .text._ZN5spark9WiFiClass16setListenTimeoutEt
-                0x080a1742        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a1742                spark::WiFiClass::setListenTimeout(unsigned short)
+                0x080a1756        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a1756                spark::WiFiClass::setListenTimeout(unsigned short)
  .text._ZN5spark9WiFiClass6listenEb
-                0x080a174a        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a174a                spark::WiFiClass::listen(bool)
+                0x080a175e        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a175e                spark::WiFiClass::listen(bool)
  .text._ZN5spark9WiFiClass3offEv
-                0x080a1756        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a1756                spark::WiFiClass::off()
+                0x080a176a        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a176a                spark::WiFiClass::off()
  .text._ZN5spark9WiFiClass10connectingEv
-                0x080a1762        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a1762                spark::WiFiClass::connecting()
- .text._ZN5spark9WiFiClass10disconnectEv
-                0x080a176c        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a176c                spark::WiFiClass::disconnect()
- .text._ZN5spark9WiFiClass7connectEj
                 0x080a1776        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a1776                spark::WiFiClass::connect(unsigned int)
+                0x080a1776                spark::WiFiClass::connecting()
+ .text._ZN5spark9WiFiClass10disconnectEv
+                0x080a1780        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a1780                spark::WiFiClass::disconnect()
+ .text._ZN5spark9WiFiClass7connectEj
+                0x080a178a        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a178a                spark::WiFiClass::connect(unsigned int)
  .text.startup._GLOBAL__sub_I__ZN10WiFiSignalC2ERK21wlan_connected_info_t
-                0x080a1780       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a1794       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
  .text._ZN5spark12NetworkClass7connectEj
-                0x080a1794        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a1794                spark::NetworkClass::connect(unsigned int)
- .text._ZN5spark12NetworkClass10disconnectEv
-                0x080a179e        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a179e                spark::NetworkClass::disconnect()
- .text._ZN5spark12NetworkClass10connectingEv
                 0x080a17a8        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a17a8                spark::NetworkClass::connecting()
- .text._ZN5spark12NetworkClass5readyEv
+                0x080a17a8                spark::NetworkClass::connect(unsigned int)
+ .text._ZN5spark12NetworkClass10disconnectEv
                 0x080a17b2        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a17b2                spark::NetworkClass::ready()
+                0x080a17b2                spark::NetworkClass::disconnect()
+ .text._ZN5spark12NetworkClass10connectingEv
+                0x080a17bc        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a17bc                spark::NetworkClass::connecting()
+ .text._ZN5spark12NetworkClass5readyEv
+                0x080a17c6        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a17c6                spark::NetworkClass::ready()
  .text._ZN5spark12NetworkClass2onEv
-                0x080a17bc        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a17bc                spark::NetworkClass::on()
+                0x080a17d0        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a17d0                spark::NetworkClass::on()
  .text._ZN5spark12NetworkClass3offEv
-                0x080a17c8        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a17c8                spark::NetworkClass::off()
+                0x080a17dc        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a17dc                spark::NetworkClass::off()
  .text._ZN5spark12NetworkClass6listenEb
-                0x080a17d4        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a17d4                spark::NetworkClass::listen(bool)
+                0x080a17e8        0xc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a17e8                spark::NetworkClass::listen(bool)
  .text._ZN5spark12NetworkClass16setListenTimeoutEt
-                0x080a17e0        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a17e0                spark::NetworkClass::setListenTimeout(unsigned short)
+                0x080a17f4        0x8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a17f4                spark::NetworkClass::setListenTimeout(unsigned short)
  .text._ZN5spark12NetworkClass16getListenTimeoutEv
-                0x080a17e8        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a17e8                spark::NetworkClass::getListenTimeout()
+                0x080a17fc        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a17fc                spark::NetworkClass::getListenTimeout()
  .text._ZN5spark12NetworkClass9listeningEv
-                0x080a17f2        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a17f2                spark::NetworkClass::listening()
+                0x080a1806        0xa ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a1806                spark::NetworkClass::listening()
  .text._ZN5spark12NetworkClass7resolveEPKc
-                0x080a17fc       0x50 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a17fc                spark::NetworkClass::resolve(char const*)
+                0x080a1810       0x50 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a1810                spark::NetworkClass::resolve(char const*)
  .text.startup._GLOBAL__sub_I__ZN5spark7NetworkE
-                0x080a184c       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a1860       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
  .text.pinAvailable
-                0x080a1860       0x48 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
-                0x080a1860                pinAvailable
- .text.pinMode  0x080a18a8       0x22 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
-                0x080a18a8                pinMode
+                0x080a1874       0x48 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
+                0x080a1874                pinAvailable
+ .text.pinMode  0x080a18bc       0x22 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
+                0x080a18bc                pinMode
  .text.digitalWrite
-                0x080a18ca       0x32 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
-                0x080a18ca                digitalWrite
+                0x080a18de       0x32 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
+                0x080a18de                digitalWrite
  .text.digitalRead
-                0x080a18fc       0x26 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
-                0x080a18fc                digitalRead
- *fill*         0x080a1922        0x2 
+                0x080a1910       0x26 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
+                0x080a1910                digitalRead
+ *fill*         0x080a1936        0x2 
  .text.startup._GLOBAL__sub_I_SPI
-                0x080a1924       0x44 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
+                0x080a1938       0x44 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
  .text.startup._GLOBAL__sub_I_INADDR_NONE
-                0x080a1968       0x30 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
+                0x080a197c       0x30 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
  .text._Z19__fetch_global_Wirev
-                0x080a1998       0x40 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
-                0x080a1998                __fetch_global_Wire()
+                0x080a19ac       0x40 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
+                0x080a19ac                __fetch_global_Wire()
  .text.__aeabi_atexit
-                0x080a19d8        0xa c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(atexit_arm.o)
-                0x080a19d8                __aeabi_atexit
- .text._ZdlPvj  0x080a19e2        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(del_ops.o)
-                0x080a19e2                operator delete(void*, unsigned int)
+                0x080a19ec        0xa c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(atexit_arm.o)
+                0x080a19ec                __aeabi_atexit
+ .text._ZdlPvj  0x080a19f6        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(del_ops.o)
+                0x080a19f6                operator delete(void*, unsigned int)
  .text._ZSt25__throw_bad_function_callv
-                0x080a19e6        0x6 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(functexcept.o)
-                0x080a19e6                std::__throw_bad_function_call()
+                0x080a19fa        0x6 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(functexcept.o)
+                0x080a19fa                std::__throw_bad_function_call()
  .text.startup._GLOBAL__sub_I__ZNSt12ctype_bynameIcEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj
-                0x080a19ec       0x84 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x080a1a00       0x84 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-locale-inst.o)
  .text.startup._GLOBAL__sub_I__ZNSt12ctype_bynameIwEC2ERKSsj
-                0x080a1a70       0xc4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(wlocale-inst.o)
+                0x080a1a84       0xc4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(wlocale-inst.o)
  .text.startup._GLOBAL__sub_I__ZNSt12ctype_bynameIcEC2ERKSsj
-                0x080a1b34       0xc4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(locale-inst.o)
+                0x080a1b48       0xc4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(locale-inst.o)
  .text.startup._GLOBAL__sub_I__ZNSt12ctype_bynameIwEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj
-                0x080a1bf8       0x84 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
- .text.atol     0x080a1c7c        0x8 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-atol.o)
-                0x080a1c7c                atol
+                0x080a1c0c       0x84 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
+ .text.atol     0x080a1c90        0x8 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-atol.o)
+                0x080a1c90                atol
  .text.__cxa_atexit
-                0x080a1c84       0x1c c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-cxa_atexit.o)
-                0x080a1c84                __cxa_atexit
- .text.memcpy   0x080a1ca0       0x16 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
-                0x080a1ca0                memcpy
- .text.memset   0x080a1cb6       0x10 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x080a1cb6                memset
- *fill*         0x080a1cc6        0x2 
- .text.srand    0x080a1cc8       0x50 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-rand.o)
-                0x080a1cc8                srand
- .text.strdup   0x080a1d18       0x10 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strdup.o)
-                0x080a1d18                strdup
+                0x080a1c98       0x1c c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-cxa_atexit.o)
+                0x080a1c98                __cxa_atexit
+ .text.memcpy   0x080a1cb4       0x16 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x080a1cb4                memcpy
+ .text.memset   0x080a1cca       0x10 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x080a1cca                memset
+ *fill*         0x080a1cda        0x2 
+ .text.srand    0x080a1cdc       0x50 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-rand.o)
+                0x080a1cdc                srand
+ .text.strdup   0x080a1d2c       0x10 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strdup.o)
+                0x080a1d2c                strdup
  .text._strdup_r
-                0x080a1d28       0x26 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strdup_r.o)
-                0x080a1d28                _strdup_r
- .text          0x080a1d4e       0x10 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strlen.o)
-                0x080a1d4e                strlen
- *fill*         0x080a1d5e        0x2 
+                0x080a1d3c       0x26 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strdup_r.o)
+                0x080a1d3c                _strdup_r
+ .text          0x080a1d62       0x10 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strlen.o)
+                0x080a1d62                strlen
+ *fill*         0x080a1d72        0x2 
  .text._strtol_r
-                0x080a1d60      0x10c c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtol.o)
-                0x080a1d60                _strtol_r
- .text.strtol   0x080a1e6c       0x14 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtol.o)
-                0x080a1e6c                strtol
-                0x080a1e80                link_code_end = .
-                0x080a1e80                . = ALIGN (0x4)
-                0x080a1e80                link_const_variable_data_location = .
+                0x080a1d74      0x10c c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtol.o)
+                0x080a1d74                _strtol_r
+ .text.strtol   0x080a1e80       0x14 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtol.o)
+                0x080a1e80                strtol
+                0x080a1e94                link_code_end = .
+                0x080a1e94                . = ALIGN (0x4)
+                0x080a1e94                link_const_variable_data_location = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.dynalib_user
-                0x080a1e80       0x14 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
-                0x080a1e80                dynalib_user
+                0x080a1e94       0x14 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
+                0x080a1e94                dynalib_user
  .rodata.str1.1
-                0x080a1e94       0xc0 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
-                                 0xd6 (size before relaxing)
+                0x080a1ea8       0xf6 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+ *fill*         0x080a1f9e        0x2 
  .rodata._ZTV8SPIClass
-                0x080a1f54       0x10 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
-                0x080a1f54                vtable for SPIClass
+                0x080a1fa0       0x10 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
+                0x080a1fa0                vtable for SPIClass
  .rodata.str1.1
-                0x080a1f64        0x1 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                0x080a1fb0       0xf6 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+                                  0x1 (size before relaxing)
  .rodata.str1.1
-                0x080a1f64       0xe1 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
+                0x080a1fb0       0xe4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
                                 0x109 (size before relaxing)
  .rodata.str1.1
-                0x080a2045       0x29 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
- *fill*         0x080a206e        0x2 
+                0x080a2094       0x29 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+ *fill*         0x080a20bd        0x3 
  .rodata._ZTVSt15_Sp_counted_ptrIPN8particle6detail10FutureImplIbNS1_13FutureContextEEELN9__gnu_cxx12_Lock_policyE0EE
-                0x080a2070       0x1c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
-                0x080a2070                vtable for std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>
+                0x080a20c0       0x1c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+                0x080a20c0                vtable for std::_Sp_counted_ptr<particle::detail::FutureImpl<bool, particle::detail::FutureContext>*, (__gnu_cxx::_Lock_policy)0>
  .rodata._ZTV9IPAddress
-                0x080a208c       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
-                0x080a208c                vtable for IPAddress
+                0x080a20dc       0x14 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+                0x080a20dc                vtable for IPAddress
  .rodata._ZTV9USBSerial
-                0x080a20a0       0x30 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
-                0x080a20a0                vtable for USBSerial
+                0x080a20f0       0x30 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+                0x080a20f0                vtable for USBSerial
  .rodata._ZTV11USARTSerial
-                0x080a20d0       0x30 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
-                0x080a20d0                vtable for USARTSerial
+                0x080a2120       0x30 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+                0x080a2120                vtable for USARTSerial
  .rodata._ZTV7TwoWire
-                0x080a2100       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
-                0x080a2100                vtable for TwoWire
+                0x080a2150       0x28 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+                0x080a2150                vtable for TwoWire
  .rodata._ZTVN5spark9WiFiClassE
-                0x080a2128       0x34 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
-                0x080a2128                vtable for spark::WiFiClass
+                0x080a2178       0x34 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+                0x080a2178                vtable for spark::WiFiClass
  .rodata._ZTVN5spark12NetworkClassE
-                0x080a215c       0x34 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
-                0x080a215c                vtable for spark::NetworkClass
+                0x080a21ac       0x34 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+                0x080a21ac                vtable for spark::NetworkClass
  .rodata._ctype_
-                0x080a2190      0x101 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ctype_.o)
-                0x080a2190                _ctype_
- *fill*         0x080a2291        0x3 
+                0x080a21e0      0x101 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-ctype_.o)
+                0x080a21e0                _ctype_
+ *fill*         0x080a22e1        0x3 
  .rodata.__sf_fake_stdin
-                0x080a2294       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x080a2294                __sf_fake_stdin
+                0x080a22e4       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x080a22e4                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x080a22b4       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x080a22b4                __sf_fake_stdout
+                0x080a2304       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x080a2304                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x080a22d4       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x080a22d4                __sf_fake_stderr
+                0x080a2324       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x080a2324                __sf_fake_stderr
  .rodata.str1.1
-                0x080a22f4        0x2 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x080a22f6                link_const_variable_data_end = .
-                0x080a22f8                . = ALIGN (0x4)
- *fill*         0x080a22f6        0x2 
-                0x080a22f8                link_constructors_location = .
+                0x080a2344        0x2 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x080a2346                link_const_variable_data_end = .
+                0x080a2348                . = ALIGN (0x4)
+ *fill*         0x080a2346        0x2 
+                0x080a2348                link_constructors_location = .
  *(.preinit_array)
  *(.init_array)
- .init_array    0x080a22f8        0x4 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
- .init_array    0x080a22fc        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
- .init_array    0x080a2300        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
- .init_array    0x080a2304        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
- .init_array    0x080a2308        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
- .init_array    0x080a230c        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
- .init_array    0x080a2310        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
- .init_array    0x080a2314        0x4 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
- .init_array    0x080a2318        0x4 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
- .init_array    0x080a231c        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-locale-inst.o)
- .init_array    0x080a2320        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(wlocale-inst.o)
- .init_array    0x080a2324        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(locale-inst.o)
- .init_array    0x080a2328        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
+ .init_array    0x080a2348        0x4 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+ .init_array    0x080a234c        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
+ .init_array    0x080a2350        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
+ .init_array    0x080a2354        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+ .init_array    0x080a2358        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
+ .init_array    0x080a235c        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+ .init_array    0x080a2360        0x4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+ .init_array    0x080a2364        0x4 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
+ .init_array    0x080a2368        0x4 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
+ .init_array    0x080a236c        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-locale-inst.o)
+ .init_array    0x080a2370        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(wlocale-inst.o)
+ .init_array    0x080a2374        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(locale-inst.o)
+ .init_array    0x080a2378        0x4 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x080a232c                link_constructors_end = .
-                0x080a232c                . = ALIGN (0x4)
-                0x080a232c                link_destructors_location = .
+                0x080a237c                link_constructors_end = .
+                0x080a237c                . = ALIGN (0x4)
+                0x080a237c                link_destructors_location = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x080a232c                link_destructors_end = .
-                0x080a2330                . = ALIGN (0x10)
- *fill*         0x080a232c        0x4 
+                0x080a237c                link_destructors_end = .
+                0x080a2380                . = ALIGN (0x10)
+ *fill*         0x080a237c        0x4 
 
-.iplt           0x080a2330        0x0
- .iplt          0x080a2330        0x0 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
+.iplt           0x080a2380        0x0
+ .iplt          0x080a2380        0x0 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
 
-.ARM.exidx      0x080a2330        0x0
-                0x080a2330                __exidx_start = ALIGN (0x4)
+.ARM.exidx      0x080a2380        0x0
+                0x080a2380                __exidx_start = ALIGN (0x4)
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x080a2330                __exidx_end = .
+                0x080a2380                __exidx_end = .
 
-.ARM.extab      0x080a2330        0x0
-                0x080a2330                __extab_start = ALIGN (0x4)
+.ARM.extab      0x080a2380        0x0
+                0x080a2380                __extab_start = ALIGN (0x4)
  *(.ARM.extab*)
-                0x080a2330                __extab_end = .
+                0x080a2380                __extab_end = .
 
-.backup         0x40024000        0x4 load address 0x080a2330
-                0x080a2330                link_global_retained_initial_values = LOADADDR (.backup)
+.backup         0x40024000        0x4 load address 0x080a2380
+                0x080a2380                link_global_retained_initial_values = LOADADDR (.backup)
                 0x40024000                link_global_retained_start = .
  *(.retained_user*)
  .retained_user
@@ -31155,8 +31156,8 @@ END GROUP
                 0x40024004                link_global_retained_end = .
                 0x40024004                . = ALIGN (., 0x4)
 
-.data           0x20000000       0x88 load address 0x080a2334
-                0x080a2334                link_global_data_initial_values = LOADADDR (.data)
+.data           0x20000000       0x88 load address 0x080a2384
+                0x080a2384                link_global_data_initial_values = LOADADDR (.data)
                 0x20000000                link_global_data_start = .
  *(.data*)
  .data.startButton
@@ -31190,7 +31191,7 @@ END GROUP
                 0x20000088                link_global_data_end = .
                 0x20000088                . = ALIGN (., 0x4)
 
-.igot.plt       0x20000088        0x0 load address 0x080a23bc
+.igot.plt       0x20000088        0x0 load address 0x080a240c
  .igot.plt      0x20000088        0x0 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
 
 .bss            0x20000088      0x5b4
@@ -31421,34 +31422,34 @@ END GROUP
                 0x2000063c                . = ALIGN (., 0x4)
 
 .module_info_suffix
-                0x080a23bc       0x28
-                0x080a23bc                . = ALIGN (., 0x2)
-                0x080a23bc                link_module_info_static_start = .
-                0x080a23bc        0x2 SHORT 0xffff
-                0x080a23be        0x2 SHORT 0xffff
+                0x080a240c       0x28
+                0x080a240c                . = ALIGN (., 0x2)
+                0x080a240c                link_module_info_static_start = .
+                0x080a240c        0x2 SHORT 0xffff
+                0x080a240e        0x2 SHORT 0xffff
  *.o(.modinfo.product_id)
  *.o(.modinfo.product_version)
-                0x080a23c0                link_module_info_suffix_start = .
+                0x080a2410                link_module_info_suffix_start = .
  *.o(.modinfo.module_info_suffix)
  .modinfo.module_info_suffix
-                0x080a23c0       0x24 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/module_info.o
-                0x080a23c0                module_info_suffix
-                0x080a23e4                link_module_info_suffix_end = .
+                0x080a2410       0x24 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/module_info.o
+                0x080a2410                module_info_suffix
+                0x080a2434                link_module_info_suffix_end = .
 
-.module_end     0x080a23e4        0x0
-                0x080a23e4                link_module_end = .
+.module_end     0x080a2434        0x0
+                0x080a2434                link_module_end = .
 
 .module_info_crc
-                0x080a23e4        0x4
-                0x080a23e4                link_module_info_crc_start = .
+                0x080a2434        0x4
+                0x080a2434                link_module_info_crc_start = .
  *.o(.modinfo.module_info_crc)
  .modinfo.module_info_crc
-                0x080a23e4        0x4 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/module_info.o
-                0x080a23e4                module_info_crc
-                0x080a23e8                link_module_info_crc_end = .
+                0x080a2434        0x4 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/module_info.o
+                0x080a2434                module_info_crc
+                0x080a2438                link_module_info_crc_end = .
 
-.rel.dyn        0x080a23e8        0x0
- .rel.iplt      0x080a23e8        0x0 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
+.rel.dyn        0x080a2438        0x0
+ .rel.iplt      0x080a2438        0x0 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
 
 /DISCARD/
  *(.ARM.attributes*)
@@ -31492,46 +31493,46 @@ END GROUP
                 0x00000001                ASSERT (((ORIGIN (SRAM) >= _ram_start) && ((ORIGIN (SRAM) + LENGTH (SRAM)) <= _ram_end)), Static RAM region doesn't fit into RAM)
 OUTPUT(c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon/cadence_monitor.elf elf32-littlearm)
 
-.debug_info     0x00000000    0xadc1c
+.debug_info     0x00000000    0xadc11
  .debug_info    0x00000000      0x471 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
  .debug_info    0x00000471      0x4dd c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/module_info.o
  .debug_info    0x0000094e       0x79 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_module.o
  .debug_info    0x000009c7      0x3eb c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/newlib_stubs.o
- .debug_info    0x00000db2     0xc4a0 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
- .debug_info    0x0000d252      0x8a3 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
- .debug_info    0x0000daf5      0x3e1 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
- .debug_info    0x0000ded6      0x5eb ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
- .debug_info    0x0000e4c1      0x70d ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_concurrent.o)
- .debug_info    0x0000ebce      0x577 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
- .debug_info    0x0000f145      0x869 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
- .debug_info    0x0000f9ae      0x6ce ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
- .debug_info    0x0001007c      0x7bb ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_wlan.o)
- .debug_info    0x00010837      0xa7f ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
- .debug_info    0x000112b6      0x3e1 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
- .debug_info    0x00011697      0x461 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
- .debug_info    0x00011af8      0x468 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
- .debug_info    0x00011f60     0x6bb7 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
- .debug_info    0x00018b17     0x7266 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
- .debug_info    0x0001fd7d     0x65c4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
- .debug_info    0x00026341     0x339a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
- .debug_info    0x000296db     0xf0af ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
- .debug_info    0x0003878a    0x194d4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
- .debug_info    0x00051c5e     0xc0ee ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
- .debug_info    0x0005dd4c     0x39be ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
- .debug_info    0x0006170a     0x5954 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
- .debug_info    0x0006705e    0x11d52 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
- .debug_info    0x00078db0     0x397d ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
- .debug_info    0x0007c72d     0x49d9 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
- .debug_info    0x00081106     0x3e58 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
- .debug_info    0x00084f5e     0x2dce ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
- .debug_info    0x00087d2c     0x50a0 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
- .debug_info    0x0008cdcc     0x5f41 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
- .debug_info    0x00092d0d     0x4e5e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
- .debug_info    0x00097b6b     0x6397 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
- .debug_info    0x0009df02     0x5ac8 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
- .debug_info    0x000a39ca     0x4f53 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_watchdog.o)
- .debug_info    0x000a891d     0x1ec0 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
- .debug_info    0x000aa7dd     0x343f ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
+ .debug_info    0x00000db2     0xc495 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+ .debug_info    0x0000d247      0x8a3 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
+ .debug_info    0x0000daea      0x3e1 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
+ .debug_info    0x0000decb      0x5eb ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
+ .debug_info    0x0000e4b6      0x70d ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_concurrent.o)
+ .debug_info    0x0000ebc3      0x577 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+ .debug_info    0x0000f13a      0x869 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+ .debug_info    0x0000f9a3      0x6ce ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+ .debug_info    0x00010071      0x7bb ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_wlan.o)
+ .debug_info    0x0001082c      0xa7f ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
+ .debug_info    0x000112ab      0x3e1 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+ .debug_info    0x0001168c      0x461 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
+ .debug_info    0x00011aed      0x468 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
+ .debug_info    0x00011f55     0x6bb7 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
+ .debug_info    0x00018b0c     0x7266 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
+ .debug_info    0x0001fd72     0x65c4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+ .debug_info    0x00026336     0x339a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+ .debug_info    0x000296d0     0xf0af ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
+ .debug_info    0x0003877f    0x194d4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
+ .debug_info    0x00051c53     0xc0ee ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+ .debug_info    0x0005dd41     0x39be ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
+ .debug_info    0x000616ff     0x5954 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+ .debug_info    0x00067053    0x11d52 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+ .debug_info    0x00078da5     0x397d ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+ .debug_info    0x0007c722     0x49d9 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+ .debug_info    0x000810fb     0x3e58 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+ .debug_info    0x00084f53     0x2dce ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
+ .debug_info    0x00087d21     0x50a0 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+ .debug_info    0x0008cdc1     0x5f41 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+ .debug_info    0x00092d02     0x4e5e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+ .debug_info    0x00097b60     0x6397 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
+ .debug_info    0x0009def7     0x5ac8 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
+ .debug_info    0x000a39bf     0x4f53 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_watchdog.o)
+ .debug_info    0x000a8912     0x1ec0 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
+ .debug_info    0x000aa7d2     0x343f ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
 
 .debug_abbrev   0x00000000     0xf555
  .debug_abbrev  0x00000000      0x17d c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
@@ -31574,33 +31575,33 @@ OUTPUT(c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence
  .debug_abbrev  0x0000ea6c      0x4ed ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
  .debug_abbrev  0x0000ef59      0x5fc ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
 
-.debug_loc      0x00000000    0x139a2
+.debug_loc      0x00000000    0x139be
  .debug_loc     0x00000000       0x8b c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
  .debug_loc     0x0000008b      0x182 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/module_info.o
  .debug_loc     0x0000020d      0x105 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/newlib_stubs.o
- .debug_loc     0x00000312      0x557 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
- .debug_loc     0x00000869      0xc90 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
- .debug_loc     0x000014f9      0x400 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
- .debug_loc     0x000018f9     0x2e0c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
- .debug_loc     0x00004705     0x15e2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
- .debug_loc     0x00005ce7      0xfab ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
- .debug_loc     0x00006c92     0x6345 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
- .debug_loc     0x0000cfd7      0x9df ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
- .debug_loc     0x0000d9b6      0xa58 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
- .debug_loc     0x0000e40e      0x18d ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
- .debug_loc     0x0000e59b     0x231f ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
- .debug_loc     0x000108ba      0x4f2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
- .debug_loc     0x00010dac      0x508 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
- .debug_loc     0x000112b4      0x528 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
- .debug_loc     0x000117dc      0x10d ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
- .debug_loc     0x000118e9      0x806 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
- .debug_loc     0x000120ef      0x8dc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
- .debug_loc     0x000129cb      0x291 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
- .debug_loc     0x00012c5c      0x7f5 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
- .debug_loc     0x00013451       0x6a ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
- .debug_loc     0x000134bb      0x413 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_watchdog.o)
- .debug_loc     0x000138ce       0x76 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
- .debug_loc     0x00013944       0x5e ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
+ .debug_loc     0x00000312      0x573 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+ .debug_loc     0x00000885      0xc90 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
+ .debug_loc     0x00001515      0x400 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
+ .debug_loc     0x00001915     0x2e0c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+ .debug_loc     0x00004721     0x15e2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+ .debug_loc     0x00005d03      0xfab ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
+ .debug_loc     0x00006cae     0x6345 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
+ .debug_loc     0x0000cff3      0x9df ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+ .debug_loc     0x0000d9d2      0xa58 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
+ .debug_loc     0x0000e42a      0x18d ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+ .debug_loc     0x0000e5b7     0x231f ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+ .debug_loc     0x000108d6      0x4f2 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+ .debug_loc     0x00010dc8      0x508 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+ .debug_loc     0x000112d0      0x528 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+ .debug_loc     0x000117f8      0x10d ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
+ .debug_loc     0x00011905      0x806 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+ .debug_loc     0x0001210b      0x8dc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+ .debug_loc     0x000129e7      0x291 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+ .debug_loc     0x00012c78      0x7f5 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
+ .debug_loc     0x0001346d       0x6a ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
+ .debug_loc     0x000134d7      0x413 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_watchdog.o)
+ .debug_loc     0x000138ea       0x76 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
+ .debug_loc     0x00013960       0x5e ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
 
 .debug_aranges  0x00000000     0x1ec0
  .debug_aranges
@@ -31993,46 +31994,46 @@ OUTPUT(c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence
  .debug_macro   0x000235ff      0x560 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
  .debug_macro   0x00023b5f      0x6fb ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
 
-.debug_line     0x00000000    0x21fb5
+.debug_line     0x00000000    0x21fbd
  .debug_line    0x00000000      0x836 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
  .debug_line    0x00000836      0x2f8 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/module_info.o
  .debug_line    0x00000b2e       0x54 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_module.o
  .debug_line    0x00000b82      0x3df c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/newlib_stubs.o
- .debug_line    0x00000f61     0x1f78 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
- .debug_line    0x00002ed9      0x2d1 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
- .debug_line    0x000031aa      0x16a ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
- .debug_line    0x00003314      0x20b ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
- .debug_line    0x0000351f      0x25a ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_concurrent.o)
- .debug_line    0x00003779      0x243 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
- .debug_line    0x000039bc      0x2be ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
- .debug_line    0x00003c7a      0x764 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
- .debug_line    0x000043de      0x2d6 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_wlan.o)
- .debug_line    0x000046b4      0x578 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
- .debug_line    0x00004c2c      0x17b ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
- .debug_line    0x00004da7      0x35d ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
- .debug_line    0x00005104      0x377 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
- .debug_line    0x0000547b     0x1a53 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
- .debug_line    0x00006ece     0x19bd ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
- .debug_line    0x0000888b     0x156e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
- .debug_line    0x00009df9      0xdb4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
- .debug_line    0x0000abad     0x1db7 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
- .debug_line    0x0000c964     0x2afd ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
- .debug_line    0x0000f461     0x18af ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
- .debug_line    0x00010d10     0x1025 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
- .debug_line    0x00011d35     0x174f ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
- .debug_line    0x00013484     0x1b92 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
- .debug_line    0x00015016      0xd02 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
- .debug_line    0x00015d18     0x1632 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
- .debug_line    0x0001734a      0xdb3 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
- .debug_line    0x000180fd      0xfda ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
- .debug_line    0x000190d7     0x1385 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
- .debug_line    0x0001a45c     0x1291 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
- .debug_line    0x0001b6ed     0x101a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
- .debug_line    0x0001c707     0x19b7 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
- .debug_line    0x0001e0be     0x17b9 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
- .debug_line    0x0001f877      0xc4d ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_watchdog.o)
- .debug_line    0x000204c4      0xb9f ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
- .debug_line    0x00021063      0xf52 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
+ .debug_line    0x00000f61     0x1f80 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+ .debug_line    0x00002ee1      0x2d1 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
+ .debug_line    0x000031b2      0x16a ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
+ .debug_line    0x0000331c      0x20b ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
+ .debug_line    0x00003527      0x25a ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_concurrent.o)
+ .debug_line    0x00003781      0x243 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+ .debug_line    0x000039c4      0x2be ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+ .debug_line    0x00003c82      0x764 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+ .debug_line    0x000043e6      0x2d6 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_wlan.o)
+ .debug_line    0x000046bc      0x578 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
+ .debug_line    0x00004c34      0x17b ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+ .debug_line    0x00004daf      0x35d ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
+ .debug_line    0x0000510c      0x377 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
+ .debug_line    0x00005483     0x1a53 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
+ .debug_line    0x00006ed6     0x19bd ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
+ .debug_line    0x00008893     0x156e ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+ .debug_line    0x00009e01      0xdb4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+ .debug_line    0x0000abb5     0x1db7 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
+ .debug_line    0x0000c96c     0x2afd ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
+ .debug_line    0x0000f469     0x18af ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+ .debug_line    0x00010d18     0x1025 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
+ .debug_line    0x00011d3d     0x174f ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+ .debug_line    0x0001348c     0x1b92 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+ .debug_line    0x0001501e      0xd02 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+ .debug_line    0x00015d20     0x1632 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+ .debug_line    0x00017352      0xdb3 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+ .debug_line    0x00018105      0xfda ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
+ .debug_line    0x000190df     0x1385 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+ .debug_line    0x0001a464     0x1291 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+ .debug_line    0x0001b6f5     0x101a ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+ .debug_line    0x0001c70f     0x19b7 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
+ .debug_line    0x0001e0c6     0x17b9 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
+ .debug_line    0x0001f87f      0xc4d ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_watchdog.o)
+ .debug_line    0x000204cc      0xb9f ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
+ .debug_line    0x0002106b      0xf52 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
 
 .debug_str      0x00000000    0xa5301
  .debug_str     0x00000000    0x59210 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
@@ -32114,58 +32115,58 @@ OUTPUT(c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence
  .debug_str     0x000a529d       0x64 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
                               0x5e24f (size before relaxing)
 
-.debug_frame    0x00000000     0xb8b0
+.debug_frame    0x00000000     0xb8ac
  .debug_frame   0x00000000       0x70 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/user_export.o
  .debug_frame   0x00000070       0x90 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/module_info.o
  .debug_frame   0x00000100       0xe8 c:/Users/s519653/Documents/IoT/Projects/iot-final-cadence-monitor/cadence_monitor/target/1.4.2/photon//obj/src/newlib_stubs.o
- .debug_frame   0x000001e8       0xf8 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
- .debug_frame   0x000002e0      0x260 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
- .debug_frame   0x00000540      0x110 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
- .debug_frame   0x00000650      0x1a0 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
- .debug_frame   0x000007f0      0x1f0 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_concurrent.o)
- .debug_frame   0x000009e0      0x180 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
- .debug_frame   0x00000b60      0x250 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
- .debug_frame   0x00000db0      0x1c0 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
- .debug_frame   0x00000f70      0x220 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_wlan.o)
- .debug_frame   0x00001190      0x2d0 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
- .debug_frame   0x00001460      0x110 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
- .debug_frame   0x00001570      0x120 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
- .debug_frame   0x00001690      0x120 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
- .debug_frame   0x000017b0      0x270 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
- .debug_frame   0x00001a20      0x15c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
- .debug_frame   0x00001b7c      0x91c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
- .debug_frame   0x00002498      0x2f0 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
- .debug_frame   0x00002788      0x2e8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
- .debug_frame   0x00002a70      0x940 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
- .debug_frame   0x000033b0      0x3bc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
- .debug_frame   0x0000376c      0x1d8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
- .debug_frame   0x00003944       0xe0 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
- .debug_frame   0x00003a24      0x388 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
- .debug_frame   0x00003dac      0x160 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
- .debug_frame   0x00003f0c      0x1dc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
- .debug_frame   0x000040e8      0x1ac ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
- .debug_frame   0x00004294       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
- .debug_frame   0x000042c0      0x22c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
- .debug_frame   0x000044ec      0x238 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
- .debug_frame   0x00004724       0xf4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
- .debug_frame   0x00004818      0x208 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
- .debug_frame   0x00004a20       0x5c ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
- .debug_frame   0x00004a7c       0x80 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_watchdog.o)
- .debug_frame   0x00004afc       0x58 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
- .debug_frame   0x00004b54       0x54 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
- .debug_frame   0x00004ba8       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(atexit_arm.o)
- .debug_frame   0x00004bc8       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(del_ops.o)
- .debug_frame   0x00004be8      0x1e8 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(functexcept.o)
- .debug_frame   0x00004dd0     0x1384 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-locale-inst.o)
- .debug_frame   0x00006154     0x2094 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(wlocale-inst.o)
- .debug_frame   0x000081e8     0x20b8 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(locale-inst.o)
- .debug_frame   0x0000a2a0     0x1380 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
- .debug_frame   0x0000b620       0x30 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-atol.o)
- .debug_frame   0x0000b650       0x28 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-cxa_atexit.o)
- .debug_frame   0x0000b678      0x11c c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
- .debug_frame   0x0000b794       0x28 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x0000b7bc       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
- .debug_frame   0x0000b7dc       0x44 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-rand.o)
- .debug_frame   0x0000b820       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strdup.o)
- .debug_frame   0x0000b840       0x2c c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strdup_r.o)
- .debug_frame   0x0000b86c       0x44 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtol.o)
+ .debug_frame   0x000001e8       0xf4 ../../../build/target/user/platform-6-m/cadence_monitor/\libuser.a(cadence_monitor.o)
+ .debug_frame   0x000002dc      0x260 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_gpio.o)
+ .debug_frame   0x0000053c      0x110 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_spi.o)
+ .debug_frame   0x0000064c      0x1a0 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_dynalib.o)
+ .debug_frame   0x000007ec      0x1f0 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_concurrent.o)
+ .debug_frame   0x000009dc      0x180 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usart.o)
+ .debug_frame   0x00000b5c      0x250 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_i2c.o)
+ .debug_frame   0x00000dac      0x1c0 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_usb.o)
+ .debug_frame   0x00000f6c      0x220 ../../../build/target/hal-dynalib/platform-6-m/\libhal-dynalib.a(hal_wlan.o)
+ .debug_frame   0x0000118c      0x2d0 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib.o)
+ .debug_frame   0x0000145c      0x110 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_net.o)
+ .debug_frame   0x0000156c      0x120 ../../../build/target/system-dynalib/platform-6-m/\libsystem-dynalib.a(system_dynalib_cloud.o)
+ .debug_frame   0x0000168c      0x120 ../../../build/target/rt-dynalib/platform-6-m/\librt-dynalib.a(rt_dynalib.o)
+ .debug_frame   0x000017ac      0x270 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_spi.o)
+ .debug_frame   0x00001a1c      0x15c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_system.o)
+ .debug_frame   0x00001b78      0x91c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_string.o)
+ .debug_frame   0x00002494      0x2f0 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_print.o)
+ .debug_frame   0x00002784      0x2e8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifitester.o)
+ .debug_frame   0x00002a6c      0x940 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_logging.o)
+ .debug_frame   0x000033ac      0x3bc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_time.o)
+ .debug_frame   0x00003768      0x1d8 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_rgb.o)
+ .debug_frame   0x00003940       0xe0 ../../../build/target/wiring/platform-6-m/\libwiring.a(user.o)
+ .debug_frame   0x00003a20      0x388 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_cloud.o)
+ .debug_frame   0x00003da8      0x160 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_ipaddress.o)
+ .debug_frame   0x00003f08      0x1dc ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usbserial.o)
+ .debug_frame   0x000040e4      0x1ac ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_usartserial.o)
+ .debug_frame   0x00004290       0x2c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_async.o)
+ .debug_frame   0x000042bc      0x22c ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_i2c.o)
+ .debug_frame   0x000044e8      0x238 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_wifi.o)
+ .debug_frame   0x00004720       0xf4 ../../../build/target/wiring/platform-6-m/\libwiring.a(spark_wiring_network.o)
+ .debug_frame   0x00004814      0x208 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_gpio.o)
+ .debug_frame   0x00004a1c       0x5c ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_spi.o)
+ .debug_frame   0x00004a78       0x80 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(spark_wiring_watchdog.o)
+ .debug_frame   0x00004af8       0x58 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_ipaddress.o)
+ .debug_frame   0x00004b50       0x54 ../../../build/target/wiring_globals/platform-6-m/\libwiring_globals.a(wiring_globals_i2c.o)
+ .debug_frame   0x00004ba4       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(atexit_arm.o)
+ .debug_frame   0x00004bc4       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(del_ops.o)
+ .debug_frame   0x00004be4      0x1e8 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(functexcept.o)
+ .debug_frame   0x00004dcc     0x1384 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-locale-inst.o)
+ .debug_frame   0x00006150     0x2094 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(wlocale-inst.o)
+ .debug_frame   0x000081e4     0x20b8 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(locale-inst.o)
+ .debug_frame   0x0000a29c     0x1380 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
+ .debug_frame   0x0000b61c       0x30 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-atol.o)
+ .debug_frame   0x0000b64c       0x28 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-cxa_atexit.o)
+ .debug_frame   0x0000b674      0x11c c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000b790       0x28 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000b7b8       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000b7d8       0x44 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-rand.o)
+ .debug_frame   0x0000b81c       0x20 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strdup.o)
+ .debug_frame   0x0000b83c       0x2c c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strdup_r.o)
+ .debug_frame   0x0000b868       0x44 c:/users/s519653/.particle/toolchains/gcc-arm/5.3.1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-strtol.o)
