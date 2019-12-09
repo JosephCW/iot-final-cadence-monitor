@@ -15,7 +15,7 @@ const router = express.Router()
 // Manage top-level requests
 router.get('/', (req, res, next) => {
     console.log('Request to /')
-    res.render('index.ejs', { title: 'Bicycle Cadence Monitor' })
+    res.render('index', {page_title: 'home'})
 })
 
 router.use('/cadence', require('../controllers/cadence.js'))
