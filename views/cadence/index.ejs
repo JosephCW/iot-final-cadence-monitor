@@ -4,6 +4,51 @@
         <br>
         <h1>Cadence Index Page</h1>
         <br>
+
+        <!-- 
+          to use this add the ejs bracket percent 
+          around this whole commented out section
+          
+          const ride = {
+          id: 0,
+          readings: [],
+          startTime: Math.round(new Date().getTime() / 1000),
+          stopTime: 0,
+          duration: 0,
+          mean: 0,
+          currentCadence: 0
+        }
+        rides.push(ride)
+        console.log(JSON.stringify(rides))
+         -->
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Ride ID</th>
+              <th scope="col">Start Time</th>
+              <th scope="col">Stop Time</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Mean Cadence</th>
+              <th scope="col">Current Cadence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% rides.forEach(ride => { %>
+              <tr>
+                  <th scope="row"><%= ride.id + 1 %></th>
+                  <td><%= ride.startTime %></td>
+                  <td><%= ride.stopTime %></td>
+                  <td><%= ride.duration %></td>
+                  <td><%= ride.mean %></td>
+                  <td><%= ride.currentCadence %></td>
+                </tr>
+            <%}) %>
+          </tbody>
+        </table>
+
+        <br>
+
       </div>
     </div>
   </div>

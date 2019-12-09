@@ -17,7 +17,7 @@
 
  api.get('/', (req, res) => {
      console.log('At /cadence/')
-     res.render('cadence/index.ejs')
+     res.render('cadence/index.ejs', {rides: req.app.locals.cadence.ride})
  })
 
  // Note the start time and assign it to the app's ride['startTime'] property
