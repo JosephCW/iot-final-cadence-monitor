@@ -33,7 +33,6 @@ void setup() {
   Particle.subscribe("hook-response/getCadence/0", handleCadence, MY_DEVICES);
   // Callback to get the rideId when starting
   Particle.subscribe("hook-response/startRide/0", handleStartRide, MY_DEVICES);
-  // a
 
   pinMode(monitor, INPUT);
   pinMode(startButton, INPUT_PULLUP);
@@ -44,11 +43,6 @@ void setup() {
   pinMode(R_LED, OUTPUT);
 
   Serial.begin(9600);
-
-  // Particle.function("startNode", start);
-  // Particle.function("stopNode", stop);
-  
-  // Particle.subscribe("getCadence", getCadence, MY_DEVICES);
 }
 
 void loop() {
@@ -69,7 +63,8 @@ void loop() {
     if (lastReadHigh && !curReadHigh) {
       passes++;
     }
-
+    
+    // if 4 seconds have passed then go ahead and publish again.
     if (curTime > lastPublishTime + 4){
       Serial.printf("{\"currentTime\":%d, \"strokesSinceLastPublish\":%d, \"rideId\": %d}", curTime, passes, rideId);
       Particle.publish("addReading", String::format("{\"currentTime\":%d, \"strokesSinceLastPublish\":%d, \"rideId\": %d}", curTime, passes, rideId));
